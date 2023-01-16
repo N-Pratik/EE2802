@@ -184,7 +184,7 @@ columns=fullflexible
 %\renewcommand{\theequation}{\theenumi}
 
 \section{Problem}
-Find the position vector of a point R which divides the line joining two points P = $\begin{pmatrix}1\\ 2 \\-1\end{pmatrix}$ and Q = $\begin{pmatrix} -1\\1\\1 \end{pmatrix}$ in the ratio 2:1 
+Find the position vector of a point R which divides the line joining two points P = $\myvec{1\\ 2 \\-1}$ and Q = $\myvec{ -1\\1\\1 }$ in the ratio 2:1 
 \begin{enumerate}
 \item internally
 \item externally
@@ -192,39 +192,39 @@ Find the position vector of a point R which divides the line joining two points 
 
 \section{Solution}
 
-$\vec P = \begin{pmatrix} 1\\2\\-1\end{pmatrix} \; \vec Q = \begin{pmatrix} -1\\1\\1\end{pmatrix}$
+$\vec{P} = \myvec{ 1\\2\\-1} \; \vec{Q} = \myvec{ -1\\1\\1}$
 
 \begin{enumerate}
 
 
 \item When R divides line segment joining P and Q internally,\\
-\begin{align*}
-\vec {PR} &= -2 \vec {QR} \\
-\vec P - \vec R &= -2 \brak{\vec Q - \vec R}\\
-\vec P - \vec R &= -2 \vec Q +2 \vec R\\
-\vec R &= \displaystyle \frac{2 \vec P + 1 \vec Q}{3} \\
- &= \frac{2}{3} \vec P + \frac{1}{3} \vec Q\\
- &= \frac{2}{3} \begin{pmatrix} 1\\2\\-1\end{pmatrix} + \frac{1}{3} \begin{pmatrix} -1\\1\\1\end{pmatrix}\\
-\vec R &= \begin{pmatrix} \displaystyle \frac{1}{3}\\ \displaystyle \frac{5}{3} \\ \displaystyle \frac{-1}{3}\end{pmatrix}
-\end{align*}
+\begin{align}
+\vec{P} - \vec{R} &= -2 \brak{\vec{Q} - \vec{R}}\\
+\vec{P} - \vec{R} &= -2 \vec{Q} +2 \vec{R}\\
+\vec{R} &= \frac{2 \vec{P} + 1 \vec{Q}}{3} \\
+ &= \frac{2}{3} \vec{P} + \frac{1}{3} \vec{Q}\\
+ &= \frac{2}{3} \myvec{ 1\\2\\-1} + \frac{1}{3} \myvec{ -1\\1\\1}\\[1pt]
+\vec{R} &= \myvec{\frac{1}{3}\\[1pt] \frac{5}{3} \\[1pt] \frac{-1}{3}}
+\end{align}
 
 
 \item When R divides line segment joining P and Q externally,\\
 
-\begin{align*}
-\vec {PR} &= 2 \vec {QR} \\
-\vec P - \vec R &= 2 \brak{\vec Q - \vec R}\\
-\vec P - \vec R &= 2 \vec Q -2 \vec R\\
-\vec R &= 2 \vec Q - \vec P \\
- &= 2 \begin{pmatrix} -1\\1\\1\end{pmatrix} - \begin{pmatrix} 1\\2\\-1\end{pmatrix}\\
-\vec R &= \begin{pmatrix} -3\\ 0 \\ 3 \end{pmatrix}
-\end{align*}
+\begin{align}
+\vec{P} - \vec{R} &= 2 \brak{\vec{Q} - \vec{R}}\\
+\vec{P} - \vec{R} &= 2 \vec{Q} -2 \vec{R}\\
+\vec{R} &= 2 \vec{Q} - \vec{P} \\
+ &= 2 \myvec{ -1\\1\\1} - \myvec{ 1\\2\\-1}\\
+\vec{R} &= \myvec{ -3\\ 0 \\ 3 }
+\end{align}
 
 
 \end{enumerate}
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=\columnwidth]{figs/Figure_1.png}
 
-\includegraphics[scale=0.8]{Figure_1}
+\end{figure}
 \end{document}
-
 
 
