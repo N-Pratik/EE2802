@@ -185,8 +185,11 @@ columns=fullflexible
 
 \section{Problem}
 
-A line passes through $\myvec{x_1\\y_1}$ and $\myvec{h\\k}$. If the slope of the line is m, show that\\
-$k-y_1 = m \brak{ h-x_1}$
+A line passes through $\myvec{x_1\\y_1}$ and $\myvec{h\\k}$. If the slope of the line is m, show that
+\begin{align}
+k-y_1 = m \brak{ h-x_1}
+\end{align}
+
 \section{Solution}
 
 let the line joining $\vec{A} = \myvec{x_1\\y_1}$ and $\vec{B} =\myvec{h\\k}$ be $ \vec{x} = \vec{x_0} + \lambda \vec{m_1}$\\
@@ -197,11 +200,11 @@ let the line joining $\vec{A} = \myvec{x_1\\y_1}$ and $\vec{B} =\myvec{h\\k}$ be
 \vec{m_1} &= k\myvec{x_1 -h \\ y_1 -k}
 \end{align}
 
-slope $m$ is given by $ m = tan(\theta),\; \theta$ being angle between line and $x$ axis  i.e. $\myvec{ 1\\0}^T\vec{x} = 0$
+slope $m$ is given by $ m = tan(\theta),\; \theta$ being angle between line and $x$ axis  i.e. $\myvec{ 1 &0}\vec{x} = 0$
 
 \begin{align}
-cos\theta &= \frac{\vec{m_1}^T\vec{m_2}}{\|\vec{m_1}\|\|\vec{m_2}\|}\\&= \frac{x_1-h}{\sqrt{\brak{x_1-h}^2 + \brak{y_1 -k}^2}}\\
-m = tan\theta &= \frac{\sqrt{1 - cos^2\theta}}{cos\theta}\\
+\cos\theta &= \frac{\vec{m_1}^T\vec{m_2}}{\|\vec{m_1}\|\|\vec{m_2}\|}\\&= \frac{x_1-h}{\sqrt{\brak{x_1-h}^2 + \brak{y_1 -k}^2}}\\
+m = \tan\theta &= \frac{\sqrt{1 - cos^2\theta}}{cos\theta}\\
 m &= \frac{y_1-k}{x_1-h}\\
 \implies k-y_1 &= m\brak{h-x_1} 
 \end{align}
