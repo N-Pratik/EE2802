@@ -188,28 +188,32 @@ Find the point on $x-axis$ that is equidistant from points $ \myvec{7 \\6}$ and 
 
 \section{Solution}
 
-The given point (say P) is equidistant from $\vec{A} =\displaystyle \myvec{7\\6}$ and $ \vec{B} =  \myvec{3 \\ 4}$\\
-\begin{align*}
-\implies \|\vec{A} - \vec{P} \|^2 &= \| \vec{B} - \vec{P} \|^2 \\
-\| \vec{A} \|^2 -2\vec{A} ^T \vec{P} + \| \vec{P} \|^2 &= \| \vec{B} \|^2 -2\vec{B} ^T \vec{P} + \| \vec{P} \|^2\\
-\brak{2 \vec{B} ^T -2 \vec{A} ^T} \vec{P}  &= \|\vec{B}\|^2 -\|\vec{A}\|^2\\
-\myvec{ 2 & 1 }\vec{P} = 15
-\end{align*}
-
-Also, P lies on $x-axis$ \\
-$\implies \myvec{ 0 & 1 }\vec{P} = 0$
-
+The given point (say P) is equidistant from 
 \begin{align}
+\vec{A} = \myvec{7\\6}\\
+ \vec{B} =  \myvec{3 \\ 4}
+ \end{align}
+ 
+ \begin{align} 
+\implies \norm{\vec{A} - \vec{P}}^2 &= \norm{ \vec{B} - \vec{P} }^2 \\
+\norm{ \vec{A} }^2 -2\vec{A} ^T \vec{P} + \norm{ \vec{P} }^2 &= \norm{ \vec{B} }^2 -2\vec{B} ^T \vec{P} + \norm{ \vec{P} }^2\\
+\brak{2 \vec{B} ^T -2 \vec{A} ^T} \vec{P}  &= \norm{\vec{B}}^2 -\norm{\vec{A}}^2\\
+\myvec{ 2 & 1 }\vec{P} = 15
+\end{align}
+
+Also, P lies on $x-axis$
+\begin{align}
+\implies \myvec{ 0 & 1 }\vec{P} &= 0\\
 \myvec{ 2 & 1 \\ 0 & 1 } \vec{P} &= \myvec{ 15 \\ 0 }\\
-\vec{P} &= \myvec{ \frac{1}{2} & -\frac{1}{2} \\[1pt] 0 & 1 } \myvec{
-15 \\ 0
-}\\
+\vec{P} &= \myvec{ \frac{1}{2} & -\frac{1}{2} \\[1pt] 0 & 1 } \myvec{ 15 \\ 0 }\\
 \vec{P} &= \myvec{7.5 \\ 0}
 \end{align}
 
 \begin{figure}[h!]
   \centering
     \includegraphics[width=\linewidth]{figs/Figure_1.png}
+    \caption{Figure1}
+    \label{fig}
 \end{figure}
 
 \end{document}
