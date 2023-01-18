@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  18 JAN 2023 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  18 JAN 2023 21:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1602,55 +1602,52 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
-
-
-Underfull \vbox (badness 6204) has occurred while \output is active []
 
 <figs/Figure_1.png, id=39, 361.35pt x 361.35pt>
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
-Package pdftex.def Info: figs/Figure_1.png  used on input line 226.
+Package pdftex.def Info: figs/Figure_1.png  used on input line 230.
 (pdftex.def)             Requested size: 252.0pt x 252.00043pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./figs/Figure_1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
 
 (./12.10.2.15.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 235.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 235.
 Package rerunfilecheck Info: File `12.10.2.15.out' has not changed.
 (rerunfilecheck)             Checksum: 1210BCF5FEAE7A75A114051724EF25E7;85.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 39765 strings out of 481239
- 901147 string characters out of 5920378
- 1305707 words of memory out of 5000000
- 54209 multiletter control sequences out of 15000+600000
+ 39770 strings out of 481239
+ 901219 string characters out of 5920378
+ 1306745 words of memory out of 5000000
+ 54212 multiletter control sequences out of 15000+600000
  590402 words of font info for 144 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,14n,91p,483b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,14n,91p,483b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on 12.10.2.15.pdf (1 page, 74556 bytes).
+Output written on 12.10.2.15.pdf (1 page, 74850 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
+ 22 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
