@@ -192,24 +192,20 @@ k-y_1 = m \brak{ h-x_1}
 
 \section{Solution}
 
-let the line joining $\vec{A} = \myvec{x_1\\y_1}$ and $\vec{B} =\myvec{h\\k}$ be $ \vec{x} = \vec{x_0} + \lambda \vec{m_1}$\\
+let the direction vector of line joining $\vec{A} = \myvec{x_1\\y_1}$ and $\vec{B} =\myvec{h\\k}$ be $ \vec{m}$\\
 
 \begin{align}
-\vec{A} - \vec{B} &= \brak{\vec{x_0} + \lambda_1 \vec{m_1}} - \brak{\vec{x_0} + \lambda_2 \vec{m_1}}= \myvec{x_1\\y_1} - \myvec{h\\k}\\
-\implies \brak{\lambda_1 -\lambda_2}\vec{m_1} &= \myvec{x_1 -h \\ y_1 -k}\\[1pt]
-\vec{m_1} &= k\myvec{x_1 -h \\ y_1 -k}
+\vec{A} - \vec{B} &= \myvec{x_1\\y_1} - \myvec{h\\k}\\
+\implies \vec{m} &= \myvec{x_1 -h \\ y_1 -k}\\[1pt]
+\vec{m} &= \myvec{x_1 -h \\ y_1 -k}
 \end{align}
 
-slope $m$ is given by $ m = tan(\theta),\; \theta$ being angle between line and $x$ axis  i.e. $\myvec{ 1 &0}\vec{x} = 0$
+Also, direction vector $\vec{m}$ is given as $\vec{m} = \myvec{ 1 \\m}$, where $m$ is the slope of the line. 
 
 \begin{align}
-\cos\theta &= \frac{\vec{m_1}^T\vec{m_2}}{\|\vec{m_1}\|\|\vec{m_2}\|}\\&= \frac{x_1-h}{\sqrt{\brak{x_1-h}^2 + \brak{y_1 -k}^2}}\\
-m = \tan\theta &= \frac{\sqrt{1 - cos^2\theta}}{cos\theta}\\
-m &= \frac{y_1-k}{x_1-h}\\
-\implies k-y_1 &= m\brak{h-x_1} 
+\vec{m} = \myvec{1\\m} &= \myvec{x_1-h\\y_1-k}\\
+\implies y_1 -k &= m\brak{x_1-h}
 \end{align}
-
-Hence Proved.
 
 \begin{figure}[h!]
   \centering
