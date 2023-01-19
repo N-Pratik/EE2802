@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  19 JAN 2023 09:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  19 JAN 2023 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1619,13 +1619,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
 Package rerunfilecheck Info: File `12.10.3.15.out' has not changed.
 (rerunfilecheck)             Checksum: 1210BCF5FEAE7A75A114051724EF25E7;85.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
  ) 
 Here is how much of TeX's memory you used:
- 39760 strings out of 481239
- 901071 string characters out of 5920378
+ 39761 strings out of 481239
+ 901088 string characters out of 5920378
  1298750 words of memory out of 5000000
- 54210 multiletter control sequences out of 15000+600000
+ 54211 multiletter control sequences out of 15000+600000
  593154 words of font info for 148 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,13n,91p,483b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
