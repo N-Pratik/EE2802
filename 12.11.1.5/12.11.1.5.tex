@@ -195,46 +195,41 @@ Vertices are given by
 
 The sides are,
 \begin{align}
-\vec{A} - \vec{B} &= \myvec{4\\4\\-6} &= \vec{m_1}\\
-\vec{B} - \vec{C} &= \myvec{4\\6\\4} &= \vec{m_2} \\
-\vec{C} - \vec{A} &= \myvec{-8\\-10\\2} & =\vec{m_3}\\
+\vec{A} - \vec{B} &= \myvec{4\\4\\-6} = \vec{m_1}\\
+\vec{B} - \vec{C} &= \myvec{4\\6\\4} = \vec{m_2} \\
+\vec{C} - \vec{A} &= \myvec{-8\\-10\\2} =\vec{m_3}\\
 \end{align}
 
 The axes are,
 \begin{align}
-\vec{X} &= \myvec{1\\0\\0}\\
-\vec{Y} &= \myvec{0\\1\\0}\\
-\vec{Z} &= \myvec{0\\0\\1}
+\vec{e}_1 &= \myvec{1\\0\\0}\\
+\vec{e}_2 &= \myvec{0\\1\\0}\\
+\vec{e}_3 &= \myvec{0\\0\\1}
+\end{align}
+
+Direction cosines of $\vec{m}$,
+\begin{align}
+\myvec{\cos{\theta_1}\\ \cos{\theta_2}\\\cos{\theta_3}} &= \myvec{ \frac{\vec{m}^{\top} {\vec{e}_1}}{\norm{\vec{m}}\norm{\vec{e}_1} }  \\[1pt] \frac{\vec{m}^{\top} {\vec{e}_1}}{\norm{\vec{m}}\norm{\vec{e}_1} } \\[1pt] \frac{\vec{m}^{\top} {\vec{e}_1}}{\norm{\vec{m}}\norm{\vec{e}_1} } }\\
+&= \frac{1}{\norm{\vec{m}}}\myvec{ \vec{m}^{\top} {\vec{e}_1} \\ \vec{m}^{\top} {\vec{e}_2} \\ \vec{m}^{\top} {\vec{e}_3} }\\
+&= \frac{\vec{m}}{\norm{\vec{m}}}
 \end{align}
 
 Direction cosines of side $\vec{m_1}$,
 \begin{align}
-\cos{\theta_1} &= \frac{\vec{m_1}^{\top} {\vec{X}}}{\norm{\vec{m_1}}\norm{\vec{X}}}\\
-&= \frac{2}{\sqrt{17}}\\
-\cos{\theta_2} &= \frac{\vec{m_1}^{\top} {\vec{Y}}}{\norm{\vec{m_1}}\norm{\vec{Y}}}\\
-&= \frac{2}{\sqrt{17}}\\
-\cos{\theta_1} &= \frac{\vec{m_1}^{\top} {\vec{Z}}}{\norm{\vec{m_1}}\norm{\vec{Z}}}\\
-&= \frac{-3}{\sqrt{17}}\\
+\myvec{\cos{\theta_1}\\ \cos{\theta_2}\\\cos{\theta_3}} &= \frac{\vec{m_1}}{\norm{\vec{m_1}}}\\
+&= \myvec{ \frac{2}{\sqrt{17}} \\[1pt] \frac{2}{\sqrt{17}} \\[1pt] \frac{-3}{\sqrt{17}} } 
 \end{align}
 
 Direction cosines of side $\vec{m_2}$,
 \begin{align}
-\cos{\theta_1} &= \frac{\vec{m_2}^{\top} {\vec{X}}}{\norm{\vec{m_2}}\norm{\vec{X}}}\\
-&= \frac{2}{\sqrt{17}}\\
-\cos{\theta_2} &= \frac{\vec{m_2}^{\top} {\vec{Y}}}{\norm{\vec{m_2}}\norm{\vec{Y}}}\\
-&= \frac{3}{\sqrt{17}}\\
-\cos{\theta_1} &= \frac{\vec{m_2}^{\top} {\vec{Z}}}{\norm{\vec{m_2}}\norm{\vec{Z}}}\\
-&= \frac{2}{\sqrt{17}}\\
+\myvec{\cos{\theta_1}\\ \cos{\theta_2}\\\cos{\theta_3}} &= \frac{\vec{m_2}}{\norm{\vec{m_2}}}\\
+&= \myvec{ \frac{2}{\sqrt{17}} \\[1pt] \frac{3}{\sqrt{17}} \\[1pt] \frac{2}{\sqrt{17}} } 
 \end{align}
 
 Direction cosines of side $\vec{m_3}$,
 \begin{align}
-\cos{\theta_1} &= \frac{\vec{m_3}^{\top} {\vec{X}}}{\norm{\vec{m_3}}\norm{\vec{X}}}\\
-&= \frac{-4}{\sqrt{42}}\\
-\cos{\theta_2} &= \frac{\vec{m_3}^{\top} {\vec{Y}}}{\norm{\vec{m_3}}\norm{\vec{Y}}}\\
-&= \frac{-5}{\sqrt{42}}\\
-\cos{\theta_1} &= \frac{\vec{m_3}^{\top} {\vec{Z}}}{\norm{\vec{m_3}}\norm{\vec{Z}}}\\
-&= \frac{1}{\sqrt{42}}\\
+\myvec{\cos{\theta_1}\\ \cos{\theta_2}\\\cos{\theta_3}} &= \frac{\vec{m_3}}{\norm{\vec{m_3}}}\\
+&= \myvec{ \frac{-4}{\sqrt{42}} \\[1pt] \frac{-5}{\sqrt{42}} \\[1pt] \frac{1}{\sqrt{42}} } 
 \end{align}
 
 
