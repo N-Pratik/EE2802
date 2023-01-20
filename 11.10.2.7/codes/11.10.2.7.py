@@ -25,4 +25,5 @@ plt.text(A[0]+0.08,A[1],'A')
 plt.plot(B[0],B[1],'bo')
 plt.text(B[0]+0.08,B[1],'B')
 
+plt.grid()
 plt.show()
