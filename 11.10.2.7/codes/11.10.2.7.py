@@ -11,7 +11,9 @@ A= np.array([[-1],[1]])
 B= np.array([[2],[-4]])
 
 m = A -B
-n = np.array([[-1*m[0][0]],[m[1][0]]])
+
+R = np.array([[0,1],[-1,0]])
+n = R @ m
 
 print( n.T,'(x-',A,')')
 
