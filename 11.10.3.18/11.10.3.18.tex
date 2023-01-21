@@ -199,9 +199,19 @@ The normal vector is,
 	\vec{n} = \myvec{b\\a}
 \end{align}
 
+The line equation is,
+\begin{align}
+	\vec{n}^{\top}\brak{ \vec{x} - \vec{A}} &= 0\\
+	\myvec{b & a}\brak{\vec{x} - \myvec{a\\0}} &= 0\\
+	\myvec{ b & a}\vec{x} &= ab
+\end{align}
+
+comparing the line equation with $ \vec{n}^{\top} \vec{x} = c $,
+ $ c = ab $
+
 The perpendicular distance between origin $\vec{O} =\myvec{0\\0}$ and the line,
 \begin{align}
-	p &= \frac{\vert n^{\top} \brak{\vec{O} - \vec{A}} \vert}{\norm{\vec{n}}}\\
+	p &= \frac{\vert n^{\top}\vec{O} - c \vert}{\norm{\vec{n}}}\\
 	&= \frac{ab}{\sqrt{a^2+b^2}}\\
 	\implies \frac{1}{p^2} &= \frac{a^2 +b^2}{a^2b^2}\\
 	&= \frac{1}{a^2}+\frac{1}{b^2}
