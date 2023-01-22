@@ -196,12 +196,6 @@ Given line is,
 \vec{x} = \myvec{\frac{a}{\cos{\theta}}\\0} + \lambda \myvec{\frac{\sin{\theta}}{b} \\ \frac{\cos{\theta}}{a} } 
 \end{align}
 
-Direction vector,
-
-\begin{align}
-	\vec{m} =\myvec{\frac{\sin{\theta}}{b} \\ \frac{\cos{\theta}}{a} } 
-\end{align}
-
 A point on the line,
 \begin{align}
 	\vec{x}_0 =\myvec{\frac{a}{\cos{\theta}}\\ 0}
@@ -223,18 +217,21 @@ Comparing with $ \vec{n}^{\top}\vec{x} = c$, $c = 1$.
 Distance from point $\vec{P}$ to the line,
 
 \begin{align}
-	d_1 &= \frac{\vert n^{\top} \vec{P} -  c \vert }{\norm{\vec{n}}} \\
-	d_1 &= \frac{ \vert \frac{\cos{\theta}\sqrt{a^2-b^2}}{a}-1 \vert }{ \sqrt{ \frac{\cos^2{\theta}}{a^2} +\frac{\sin^2{\theta}}{b^2} }}\\
+	d_1 &= \frac{\abs{ n^{\top} \vec{P} -  c } }{\norm{\vec{n}}}
 \end{align}
 
+Distance from point $\vec{Q}$ to the line,
 \begin{align}
-	d_2 &= \frac{\vert n^{\top} \vec{Q} -  c \vert }{\norm{\vec{n}}} \\
-	d_2 &= \frac{\vert \frac{\cos{\theta}\sqrt{a^2-b^2}}{a}+1 \vert}{\sqrt {\frac{\cos^2{\theta}}{a^2} +\frac{\sin^2{\theta}}{b^2} }}\\
+	d_2 &= \frac{\abs{ n^{\top} \vec{Q} -  c } }{\norm{\vec{n}}} \\
+%	d_2 &= \frac{\vert \frac{\cos{\theta}\sqrt{a^2-b^2}}{a}+1 \vert}{\sqrt {\frac{\cos^2{\theta}}{a^2} +\frac{\sin^2{\theta}}{b^2} }}\\
+&=\frac{\abs{ -n^{\top} \vec{P} -  c } }{\norm{\vec{n}}}\\
+&=\frac{\abs{ n^{\top} \vec{P} +  c } }{\norm{\vec{n}}}
 \end{align}
 
 
 \begin{align}
-	d_1d_2 &=\frac{\vert \frac{\cos^2{\theta}\brak{a^2-b^2}}{a^2}- 1 \vert}{\frac{\cos^2{\theta}}{a^2} +\frac{\sin^2{\theta}}{b^2} }\\ 
+	d_1d_2 &=\frac{\abs{ \brak{n^{\top} \vec{P}}^2 -  c^2 } }{\norm{\vec{n}}}\\
+	&=\frac{\abs{ \frac{\cos^2{\theta}\brak{a^2-b^2}}{a^2}- 1 }}{\frac{\cos^2{\theta}}{a^2} +\frac{\sin^2{\theta}}{b^2} }\\ 
 	&= \frac{\brak{b^2 \cos^2{\theta} + a^2 \sin^2{\theta}}a^2 b^2}{\brak{b^2 \cos^2{\theta} + a^2 \sin^2{\theta}}a^2}\\
 	&= b^2
 \end{align}
