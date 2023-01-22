@@ -187,13 +187,12 @@ Prove that the products of the lengths of the perpendiculars drawn from the poin
 
 \begin{align}
 	\vec{P} &=\myvec{\sqrt{a^2-b^2}\\0} \\
-	\vec{Q} &= \myvec{-\sqrt{a^2-b^2} \\ 0}
 \end{align}
 
 Given line is,
 
 \begin{align}
-\vec{x} = \myvec{\frac{a}{\cos{\theta}}\\0} + \lambda \myvec{\frac{\sin{\theta}}{b} \\ \frac{\cos{\theta}}{a} } 
+	\myvec{\frac{\cos{\theta}}{a} \\[1pt] \frac{-\sin{\theta}}{b} } \vec{x} &= 1
 \end{align}
 
 A point on the line,
@@ -201,18 +200,12 @@ A point on the line,
 	\vec{x}_0 =\myvec{\frac{a}{\cos{\theta}}\\ 0}
 \end{align}
 
-Normal vector, 
-\begin{align}
-	\vec{n} =\myvec{\frac{\cos{\theta}}{a} \\[1pt] \frac{-\sin{\theta}}{b} } 
-\end{align}
 
-The line equation,
+Comparing with 
 \begin{align}
-	\vec{n}^{\top} \brak{\vec{x} - \vec{x}_0} &= 0 \\
-	\myvec{\frac{\cos{\theta}}{a} \\[1pt] \frac{-\sin{\theta}}{b} } \vec{x} &= 1
-\end{align}
-
-Comparing with $ \vec{n}^{\top}\vec{x} = c$, $c = 1$. 
+ \vec{n}^{\top}\vec{x} = c \\
+  c = 1
+\end{align} 
 
 Distance from point $\vec{P}$ to the line,
 
@@ -220,11 +213,9 @@ Distance from point $\vec{P}$ to the line,
 	d_1 &= \frac{\abs{ n^{\top} \vec{P} -  c } }{\norm{\vec{n}}}
 \end{align}
 
-Distance from point $\vec{Q}$ to the line,
+Distance from point $\vec{-P}$ to the line,
 \begin{align}
-	d_2 &= \frac{\abs{ n^{\top} \vec{Q} -  c } }{\norm{\vec{n}}} \\
-%	d_2 &= \frac{\vert \frac{\cos{\theta}\sqrt{a^2-b^2}}{a}+1 \vert}{\sqrt {\frac{\cos^2{\theta}}{a^2} +\frac{\sin^2{\theta}}{b^2} }}\\
-&=\frac{\abs{ -n^{\top} \vec{P} -  c } }{\norm{\vec{n}}}\\
+	d_2 &=\frac{\abs{ -n^{\top} \vec{P} -  c } }{\norm{\vec{n}}}\\
 &=\frac{\abs{ n^{\top} \vec{P} +  c } }{\norm{\vec{n}}}
 \end{align}
 
