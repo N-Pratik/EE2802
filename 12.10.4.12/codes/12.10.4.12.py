@@ -2,13 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-def areacalc(m,n):
-    Area = np.zeros([3,1])
-    Area[0][0] = m[1][0]*n[2][0] - m[2][0]*n[1][0]
-    Area[1][0] = m[2][0]*n[0][0] - m[0][0]*n[2][0]
-    Area[2][0] = m[0][0]*n[1][0] - m[1][0]*n[0][0]
-    return np.linalg.norm(Area) 
+def areaCalc(m,n):
+    a = np.array([m[0][0],m[1][0],m[2][0]])
+    b = np.array([n[0][0],n[1][0],n[2][0]])
+    Area = np.cross(a,b)
+    Area = np.linalg.norm(Area)
 
+    return Area
 
 A = np.array([[-1],[0.5],[4]])
 B = np.array([[1],[0.5],[4]])
@@ -23,7 +23,7 @@ fig = plt.figure()
 ax =fig.add_subplot(projection='3d')
 
 if m1.all() == m2.all():
-    Area= areacalc(m1,m3)
+    Area= areaCalc(m1,m3)
     S1 = np.hstack((A,B))
     S2 = np.hstack((C,D))
     S3 = np.hstack((C,B))
@@ -31,7 +31,7 @@ if m1.all() == m2.all():
 
  
 elif m1.all == -1*m2.all():
-    Area= np.linalg.norm(m1)*np.linalg.norm(m3)
+    Area= areaCalc(m1,m3)
     S1 = np.hstack((A,B))
     S2 = np.hstack((C,D))
     S3 = np.hstack((C,A))
@@ -39,14 +39,14 @@ elif m1.all == -1*m2.all():
 
 
 elif m3.all == m4.all:
-    Area = np.linalg.norm(m2)*np.linalg.norm(m3)
+    Area = areaCalc(m2,m3)
     S1 = np.hstack((A,C))
     S2 = np.hstack((C,B))
     S3 = np.hstack((B,D))
     S4 = np.hstack((A,D))
 
 elif m3.all == -1* m4.all:
-    Area = np.linalg.norm(m2)*np.linalg.norm(m3)
+    Area = areaCalc(m2,m3)
     S1 = np.hstack((A,D))
     S2 = np.hstack((D,C))
     S3 = np.hstack((C,B))
