@@ -1,22 +1,11 @@
- \documentclass[journal,12pt,twocolumn]{IEEEtran}
-%
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{romannum}
+\usepackage{float}
 \usepackage{setspace}
 \usepackage{gensymb}
-%\doublespacing
 \singlespacing
-
-%\usepackage{graphicx}
-%\usepackage{amssymb}
-%\usepackage{relsize}
 \usepackage[cmex10]{amsmath}
-%\usepackage{amsthm}
-%\interdisplaylinepenalty=2500
-%\savesymbol{iint}
-%\usepackage{txfonts}
-%\restoresymbol{TXF}{iint}
-%\usepackage{wasysym}
 \usepackage{amsthm}
-%\usepackage{iithtlc}
 \usepackage{mathrsfs}
 \usepackage{txfonts}
 \usepackage{stfloats}
@@ -24,11 +13,8 @@
 \usepackage{cite}
 \usepackage{cases}
 \usepackage{subfig}
-%\usepackage{xtab}
 \usepackage{longtable}
 \usepackage{multirow}
-%\usepackage{algorithm}
-%\usepackage{algpseudocode}
 \usepackage{enumitem}
 \usepackage{mathtools}
 \usepackage{steinmetz}
@@ -37,9 +23,7 @@
 \usepackage{verbatim}
 \usepackage{tfrupee}
 \usepackage[breaklinks=true]{hyperref}
-%\usepackage{stmaryrd}
-\usepackage{tkz-euclide} % loads  TikZ and tkz-base
-%\usetkzobj{all}
+\usepackage{tkz-euclide}
 \usetikzlibrary{calc,math}
 \usepackage{listings}
     \usepackage{color}                                            %%
@@ -53,12 +37,7 @@
     \usepackage{lscape}     
 \usepackage{multicol}
 \usepackage{chngcntr}
-%\usepackage{enumerate}
-
-%\usepackage{wasysym}
-%\newcounter{MYtempeqncnt}
 \DeclareMathOperator*{\Res}{Res}
-%\renewcommand{\baselinestretch}{2}
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
 \renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
@@ -72,19 +51,12 @@
 \def\inputGnumericTable{}                                 %%
 
 \lstset{
-%language=C,
 frame=single, 
 breaklines=true,
 columns=fullflexible
 }
-%\lstset{
-%language=tex,
-%frame=single, 
-%breaklines=true
-%}
 
 \begin{document}
-%
 
 
 \newtheorem{theorem}{Theorem}[section]
@@ -94,18 +66,11 @@ columns=fullflexible
 \newtheorem{corollary}[theorem]{Corollary}
 \newtheorem{example}{Example}[section]
 \newtheorem{definition}[problem]{Definition}
-%\newtheorem{thm}{Theorem}[section] 
-%\newtheorem{defn}[thm]{Definition}
-%\newtheorem{algorithm}{Algorithm}[section]
-%\newtheorem{cor}{Corollary}
 \newcommand{\BEQA}{\begin{eqnarray}}
 \newcommand{\EEQA}{\end{eqnarray}}
 \newcommand{\define}{\stackrel{\triangle}{=}}
 
 \bibliographystyle{IEEEtran}
-%\bibliographystyle{ieeetr}
-
-
 \providecommand{\mbf}{\mathbf}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
@@ -124,35 +89,25 @@ columns=fullflexible
 \providecommand{\abs}[1]{\left\vert#1\right\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
 \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
-%\providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
 \providecommand{\mean}[1]{E\left[ #1 \right]}
 \providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
-%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
 \providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
-	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
 \newcommand{\solution}{\noindent \textbf{Solution: }}
 \newcommand{\cosec}{\,\text{cosec}\,}
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-%\numberwithin{equation}{section}
 \numberwithin{equation}{subsection}
-%\numberwithin{problem}{section}
-%\numberwithin{definition}{section}
 \makeatletter
 \@addtoreset{figure}{problem}
 \makeatother
 
 \let\StandardTheFigure\thefigure
 \let\vec\mathbf
-%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
 \renewcommand{\thefigure}{\theproblem}
-%\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
-%\counterwithin{equation}{enumi}
 
 
-%\renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
 
 \def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
      \def\rightbox#1{\makebox[0in][r]{#1}}
@@ -181,43 +136,88 @@ columns=fullflexible
 
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-%\renewcommand{\theequation}{\theenumi}
 
 \section{Problem}
 Find the shortest distance between the lines $\frac{x+1}{7} = \frac{y+1}{-6}=\frac{z+1}{1}$ and $\frac{x-3}{1} = \frac{y-5}{-2}=\frac{z-7}{1}$
+
 \section{Solution}
-Line equations are
-
-\begin{align} 
-\vec{x} &= \myvec{-1\\-1\\-1} + \lambda \myvec{7\\-6\\1}\\ 
-\vec{x} &= \myvec{3\\5\\7} + \lambda \myvec{1\\-2\\1}
-\end{align}
-
-Comparing with $ \vec{r} = \vec{a} + \lambda \vec{b}$,
-
+ The lines $l_1$ and $l_2$ in vector form can be written as
 \begin{align}
-\vec{a}_1 = \myvec{-1\\-1\\-1} \; \vec{b}_1 = \myvec{7\\-6\\1}\\
-\vec{a}_2 = \myvec{3\\5\\7} \; \vec{b}_2 = \myvec{1\\-2\\1}
+\vec{x} &= \myvec{-1\\-1\\-1} + \lambda_1\myvec{7\\-6\\1}\\
+\vec{x} &= \myvec{3\\5\\7} + \lambda_2\myvec{1\\-2\\1} \\
+\vec{x_1} = \myvec{-1\\-1\\-1},\, \vec{x_2} &= \myvec{3\\5\\7}, \,\vec{m_1} = \myvec{7\\-6\\1}, \, \vec{m_2} = \myvec{1\\-2\\1}
 \end{align}
 
-Distance between the lines is given by
+We first check whether the given lines are skew. The lines 
 \begin{align}
-d &= \abs{\frac{\brak{\vec{b}_1 \times \vec{b}_2}^{\top} \brak{\vec{a}_2 - \vec{a}_1}}{\norm{\vec{b}_1 \times \vec{b}_2}}}\\
-\vec{b}_1 \times \vec{b}_2 &= \myvec{ -4\\-6\\-8} \\
-\vec{a}_2 - \vec{a}_1 &= \myvec{4\\6\\8}\\
-d &= \abs{\frac{\brak{\vec{b}_1 \times \vec{b}_2}^{\top} \brak{\vec{a}_2 - \vec{a}_1}}{\norm{\vec{b}_1 \times \vec{b}_2}}}\\
-&=  \frac{116}{2\sqrt{29}}\\
-& = 2\sqrt{29}
+\vec{x} = \vec{x_1} + \lambda_1\vec{m_1},\, \vec{x} = \vec{x_2} + \lambda_2\vec{m_2} 
+\label{eq:1}
 \end{align}
-
-\begin{figure}[h!]
-  \centering
-   \includegraphics[width=\columnwidth]{figs/Figure_1.png}
-   \caption{given lines}
-   \label{fig:}
-\end{figure}
+intersect if
+\begin{align}
+\vec{M}{\lambda} &= \vec{x_2} - \vec{x_1}\\
+\vec{M} &\triangleq \myvec{\vec{m_1} & \vec{m_2}} \\
+\bm{\lambda} &\triangleq \myvec{\lambda_1\\-\lambda_2}\\
+\end{align}
+Here we have,
+\begin{align}
+\vec{M} &= \myvec{7&1\\-6&-2\\1&1}\\
+\vec{x_2} - \vec{x_1} &= \myvec{4\\6\\8}
+\end{align}
+We check whether the equation \eqref{eq:2} has a solution
+\begin{align}
+\myvec{7&1\\-6&-2\\1&1}\bm{\lambda} = \myvec{4\\6\\8}
+\label{eq:2}
+\end{align}
+the augmented matrix is given by,
+\begin{align}
+\myvec{7&1&\vrule&4\\-6&-2&\vrule&6\\1&1&\vrule&8}\\
+\xleftrightarrow[R_3 \leftarrow R_3 - \frac{1}{7}R_1]{R_2 \leftarrow R_2 + \frac{6}{7}R_1}\\
+\myvec{7&1&\vrule&4\\&&\vrule\\0&-\frac{8}{7}&\vrule&\frac{66}{7}\\&&\vrule\\0&\frac{6}{7}&\vrule&-\frac{52}{7}}\\
+\xleftrightarrow{R_3 \leftarrow R_3 + \frac{3}{4}R_2}\\
+\myvec{2&3&\vrule&1\\&&\vrule\\0&-\frac{7}{2}&\vrule&\frac{1}{2}\\&&\vrule\\0&0&\vrule&-\frac{5}{14}}
+\end{align}
+The rank of the matrix is 3. So the given lines are skew.
+The closest points on two skew lines defined by \eqref{eq:1} are given by 
+\begin{align}
+\vec{M}^\top \vec{M}\bm{\lambda} &= \vec{M}^\top\brak{\vec{x_2}-\vec{x_1}}\\
+\myvec{7&-6&1\\1&-2&1} \myvec{7&1\\-6&-2\\1&1}\bm{\lambda} &= \myvec{7&-6&1\\1&-2&1} \myvec{4\\6\\8}\\
+\myvec{86&20\\20&6}\bm{\lambda} &= \myvec{0\\0}
+\label{eq:3}
+\end{align}
+The augmented matrix of the above equation \eqref{eq:3} is given by,
+\begin{align}
+\myvec{86&20&\vrule&0\\20&6&\vrule&0}\\
+\xleftrightarrow{R_2 \leftarrow R_2 - \frac{10}{43}R_1}
+\end{align}
+\begin{align}
+\myvec{86&20&\vrule&0 \\&&\vrule\\ 0&\frac{58}{43}&\vrule&0}\\
+\xleftrightarrow[R_2 \leftarrow \frac{43}{58}R_2]{R_1 \leftarrow \frac{1}{86} \brak{R_1 - \frac{430}{29}R_2}}\\
+\myvec{1&0&\vrule&0 \\&&\vrule\\ 0&1&\vrule&0}
+\end{align}
+So, we get
+\begin{align}
+\myvec{\lambda_1\\-\lambda_2} &= \myvec{0\\0}
+\end{align}
+The closest points $\vec{A}$ on line $l_1$ and $\vec{B}$ on line $l_2$ are given by,
+\begin{align}
+\vec{A} &= \vec{x_1} + \lambda_1\vec{m_1}\\
+&=  \myvec{-1\\-1\\-1} + 0\vec{m_1}\\
+&= \myvec{-1\\-1\\-1}\\
+\vec{B} &= \vec{x_2} + \lambda_2\vec{m_2}\\
+&= \myvec{3\\5\\7} + 0\vec{m_2}\\
+&= \myvec{3\\5\\7}
+\end{align}
+The minimum distance between the lines is given by,
+\begin{align}
+\norm{\vec{B}-\vec{A}} &= \norm{\myvec{4\\6\\8}}\\
+&= 2\sqrt{29}
+\end{align}
+The shortest distance between the given lines is $2\sqrt{29}$ units.
+%\begin{figure}[!ht]
+%\centering
+%\includegraphics[width=\columnwidth]{./figs/skew.png}
+%\caption{$AB$ is the required shortest distance.}
+%\end{figure}
 
 \end{document}
-
-
-
