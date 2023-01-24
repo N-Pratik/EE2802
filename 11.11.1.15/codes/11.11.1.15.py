@@ -16,17 +16,20 @@ OA = np.linalg.norm(O-A)
 error = OA -r
 print(error)
 
-if error < 0 :
+if error < 0.01 :
     print('point lies in the circle')
-elif error > 0 :
+elif error > 00.01 :
     print('point lies outside the circle')
-elif error == 0:
+else:
     print('point lies on the circle')
 
-c1 = circ_gen( np.array([O[0][0],O[1][0]]), r)
+c1 = circ_gen( O.T, r)
 
 plt.figure(figsize=(4,4))
 plt.plot(c1[0],c1[1])
+
+plt.plot(O[0][0],O[1][0], 'go')
+plt.text(O[0][0]+0.2,O[1][0],'O (0,0)')
 plt.plot(A[0][0],A[1][0],'go')
 plt.text(A[0][0]+0.2,A[1][0],'A (-2.5,3.5)')
 
