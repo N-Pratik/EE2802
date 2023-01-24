@@ -16,7 +16,7 @@ OA = np.linalg.norm(O-A)
 error = OA -r
 print(error)
 
-if error < 0.01 :
+if error < -0.01 :
     print('point lies in the circle')
 elif error > 00.01 :
     print('point lies outside the circle')
