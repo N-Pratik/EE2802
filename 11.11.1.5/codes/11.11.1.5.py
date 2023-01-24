@@ -16,7 +16,7 @@ r = np.sqrt(a**2 -b**2)
 
 print(f"Line equation: ||x||\u00b2 +{-2*O.T}x  + {o**2-r**2}")
 
-c1 = circ_gen(np.array([O[0][0],O[1][0]]), r)
+c1 = circ_gen(O.T, r)
 
 plt.figure(figsize=(5,5))
 plt.plot(c1[0],c1[1])
