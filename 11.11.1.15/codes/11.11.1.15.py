@@ -16,7 +16,7 @@ OA = np.linalg.norm(O-A)
 error = OA -r
 print(error)
 
-if error < -0.01 :
+if error < 0.01 :
     print('point lies in the circle')
 elif error > 00.01 :
     print('point lies outside the circle')
@@ -33,4 +33,5 @@ plt.text(O[0][0]+0.2,O[1][0],'O (0,0)')
 plt.plot(A[0][0],A[1][0],'go')
 plt.text(A[0][0]+0.2,A[1][0],'A (-2.5,3.5)')
 
+plt.grid()
 plt.show()
