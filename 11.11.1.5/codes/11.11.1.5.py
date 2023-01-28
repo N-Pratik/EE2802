@@ -23,7 +23,7 @@ plt.plot(c1[0],c1[1])
 
 plt.plot(O[0][0],O[1][0],'go')
 plt.text(O[0][0]+0.2,O[1][0], 'Centre (-a,-b)')
-plt.text(O[0][0]+0.2,O[1][0]-0.7, '(-7,-3)')
 
+plt.grid()
 plt.show()
 
