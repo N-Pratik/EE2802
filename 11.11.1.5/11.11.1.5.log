@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  26 JAN 2023 06:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  2 FEB 2023 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1603,33 +1603,38 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
+(./tables/table_1.tex)
 <figs/Figure_1.png, id=39, 361.35pt x 361.35pt>
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
-Package pdftex.def Info: figs/Figure_1.png  used on input line 201.
+Package pdftex.def Info: figs/Figure_1.png  used on input line 213.
 (pdftex.def)             Requested size: 252.0pt x 252.00043pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./figs/Figure_1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 206.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 206.
- (./11.11.1.5.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 206.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 206.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+
+(./11.11.1.5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
 Package rerunfilecheck Info: File `11.11.1.5.out' has not changed.
 (rerunfilecheck)             Checksum: 1210BCF5FEAE7A75A114051724EF25E7;85.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 206.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
  ) 
 Here is how much of TeX's memory you used:
- 39758 strings out of 481239
- 901032 string characters out of 5920378
- 1295740 words of memory out of 5000000
- 54210 multiletter control sequences out of 15000+600000
+ 39766 strings out of 481239
+ 901140 string characters out of 5920378
+ 1296804 words of memory out of 5000000
+ 54213 multiletter control sequences out of 15000+600000
  591778 words of font info for 146 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,13n,91p,482b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,13n,91p,482b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1637,10 +1642,10 @@ e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 11.11.1.5.pdf (1 page, 54146 bytes).
+Output written on 11.11.1.5.pdf (1 page, 55224 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
+ 90 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 11 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
