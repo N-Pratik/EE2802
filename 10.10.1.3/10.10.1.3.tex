@@ -187,25 +187,52 @@ columns=fullflexible
 A tangent $\vec{P} - \vec{Q}$ at a point $\vec{P}$ of a circle of radius $r =5cm$ meets a line through the center $\vec{O}$ at a point $\vec{Q}$ so that $\vec{O}- \vec{Q} = 12cm$. Find length $\vec{P}-\vec{Q}$.
 
 \section{Solution}
-Let the circle be \begin{align}\norm{\vec{x}}^2=25\end{align} and the point $\vec{P} = \myvec{0\\5}$\\
+Let the circle be \begin{align}
+\norm{\vec{x}}^2=25 \\
+\end{align}
+and the point $\vec{P} = \myvec{0\\5}$\\
 The tangent at $\vec{P}$, that $\vec{Q}$ lies on, is given by
 \begin{align}
-	\vec{x} &= \myvec{0\\5} +\lambda \myvec{1\\0}\\
-		&= \myvec{\lambda\\5}
+	\vec{x} = \myvec{0\\5} +\mu \myvec{1\\0}\\
+	i.e. \vec{m} = \myvec{1//0}\;,\; \vec{h} =\myvec{0\\5}
 \end{align}
+
+Let,
+\begin{align}
+	\vec{Q} &= \vec{h} +\mu_i \vec{m}
+\end{align}
+
 
 also, 
 \begin{align}
 	\norm{\vec{Q} -\vec{O}} &= 12\\
-	\norm{\vec{Q}} &= 12\\
-	\norm{\vec{Q}}^2 &= 144
+\end{align}
+Hence,Q lies on circle with center $\vec{O}$ and radius 12cm. Equation of this circle is:
+\begin{align}
+	\norm{x}^2-144=0\\
+	i.e. \vec{u} = \myvec{0\\0} \; ,\; f= -144
 \end{align}
 
-for $\vec{Q}$
+For circle,$\vec{V} = \vec{I}$
+
 \begin{align}
-	\lambda^2+25 &= 144\\
-	\lambda^2 &= 119\\
-	\lambda &= \pm \sqrt{119}
+	\mu_i = \frac{1}{\vec{m}^{\top}\vec{V}\vec{m}} \brak{-m^{\top}\brak{\vec{V}\vec{h}+\vec{u}} \pm \sqrt{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}^2 - \text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}}}}
+\end{align}
+
+where,
+\begin{align}
+	\text{g}\brak{\vec{h}} = \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
+\end{align}
+
+here, 
+\begin{align}
+	\mu_i = \pm \sqrt{119}
+\end{align}
+
+Therefore,
+\begin{align}
+	\vec{Q} &= \vec{h} +\mu_i \vec{m} \\
+		&= \myvec{\sqrt{119}\\5}
 \end{align}
 
 \begin{align}
