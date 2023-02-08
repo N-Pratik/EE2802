@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  8 FEB 2023 18:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  8 FEB 2023 18:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1603,8 +1603,8 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Overfull \hbox (66.29533pt too wide) detected at line 225
-[]
+Overfull \hbox (86.29533pt too wide) detected at line 225
+ []$[]  \OML/txmi/m/it/12 ^^V[] \OT1/txr/m/n/12 = [] []$ []  
  []
 
 (./tables/table_1.tex)
@@ -1648,7 +1648,7 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 9.10.4.5.pdf (2 pages, 77508 bytes).
+Output written on 9.10.4.5.pdf (2 pages, 77533 bytes).
 PDF statistics:
  116 PDF objects out of 1000 (max. 8388607)
  85 compressed objects within 1 object stream
