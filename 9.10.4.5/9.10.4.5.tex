@@ -206,16 +206,38 @@ Therefore, the equation of the cicle is given by
 Also, $\vec{A}$ and $\vec{C}$ are equidistant (6m) from $\vec{B}$, we can say that they lie on the circle having $\vec{B}$ as center and radius 6m.Equation of this circleis given by,
 \begin{align}
 	\norm{\vec{x}}^2 - 2\vec{B}^{\top} \vec{x} + \norm{\vec{B}}^2 - 36 &= 0\\
-	\norm{\vec{x}}^2 &= 36
+	\norm{\vec{x}}^2 &= 36\\
+	i.e., \vec{u} = \myvec{0\\0}\;, \; f = -36
 	\label{eq:2}
 \end{align}
 
-Solution for $\vec{A}$ and $\vec{C}$ from \eqref{eq:1} and \eqref{eq:2},
+line passing through $\vec{A}$ and $\vec{C}$ from \eqref{eq:1} and \eqref{eq:2},
 \begin{align}
 	\myvec{5&0} \vec{x} &= 18\\
-	\norm{\vec{x}} &= 36 \\
-	\therefore, \vec{x} = \myvec{\frac{18}{5} \\[1pt] \pm \frac{24}{5}}\\
-	\vec{A} = \myvec{\frac{18}{5} \\[1pt] \frac{24}{5}} \; \vec{C} = \myvec{\frac{18}{5} \\ -\frac{24}{5}} 
+	\vec{x} &= \myvec{\frac{18}{5}\\[1pt] 0} + \mu \myvec{0\\1}\\
+	i.e., \; \vec{h} = \myvec{\frac{18}{5}\\[1pt] 0} \; , \; \vec{m} = \myvec{0\\1}
+\end{align}
+
+For circle,$\vec{V} = \vec{I}$
+
+\begin{align}
+	\mu_i = \frac{1}{\vec{m}^{\top}\vec{V}\vec{m}} \brak{-m^{\top}\brak{\vec{V}\vec{h}+\vec{u}} \pm \sqrt{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}^2 - \text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}}}}
+\end{align}
+
+where,
+\begin{align}
+	\text{g}\brak{\vec{h}} = \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
+\end{align}
+
+here, 
+\begin{align}
+	\mu_i = \pm \frac{24}{5}
+\end{align}
+
+Therefore,
+\begin{align}
+	\vec{A} &= \myvec{\frac{18}{5}\\[1pt] \frac{24}{5}}\\
+	\vec{C} &= \myvec{\frac{18}{5}\\[1pt] -\frac{24}{5}}
 \end{align}
 
 Distance between Reshma and Mandip,
@@ -223,6 +245,21 @@ Distance between Reshma and Mandip,
 	\norm{\vec{A} - \vec{C}} &= \norm{\myvec{0\\[1pt] \frac{48}{5}}}\\
 	&= \frac{48}{5}
 \end{align}
+
+\begin{table}[h!]
+\begin{center}
+	\input{tables/table_1.tex}
+\end{center}
+\caption{Table1}
+\label{tab:}
+\end{table}
+
+\begin{figure}[h!]
+  \centering
+    \includegraphics[width=\columnwidth]{figs/Figure_1.png}
+    \caption{Figure 1}
+    \label{fig:}
+\end{figure}
 
 \end{document}
 
