@@ -87,7 +87,7 @@ plt.text(O[0]-0.3,O[1],'O')
 plt.scatter(P[0],P[1])
 plt.text(P[0]+0.2,P[1],'P')
 
-#plt.xlim(-7,7)
-
+plt.xlim(-7,7)
+plt.ylim(-7,7)
 plt.grid()
 plt.show()
