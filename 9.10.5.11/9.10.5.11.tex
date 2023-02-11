@@ -189,33 +189,41 @@ $\angle CAD$ = $\angle CBD$.
 
 \section{Solution}
 
-let $\angle{CBD} =\theta $ and $\angle{CAD} =\phi$\\
-Traingle ABC is right angled with right angle at $\vec{B}$\\
-Therefore, $\vec{B}$ lies on the circle centered at 
+Consider $\triangle ABC$ such that
 \begin{align}
-	\vec{O} =\frac{\vec{A} + \vec{C}}{2}
-\end{align}
-and radius $\frac{\norm{\vec{A}-\vec{C}}}{2}$.
-
-Similarly, $\vec{D}$ lies on the same circle.
-
-$\angle CAD$ and $\angle CBD$ lie on the segment $\vec{C}-\vec{D}$ of the circle.
-\begin{align}
-	\therefore, \angle CAD = \angle CBD
+	\vec{A} = \myvec{-a\\0} \\
+	\vec{C} = \myvec{a \\ 0} \\
 \end{align}
 
-For example, Consider right triangles such that,
+Both the triangles ($\triangle{ABC} $ and $\triangle{ADC}$) are right angled.\\
+Hence, it can be said that $\vec{B}$ and $\vec{D}$ lie on circle having $\vec{A}$ and $\vec{C}$ as its diametric end-points.\\
+Equation of this circle is given by:
 \begin{align}
-	\vec{A} &= \myvec{-1\\1} \\
-	\vec{C} &= \myvec{1\\-1} \\
-	\vec{B} &= \myvec{-1\\-1} \\
-	\vec{D} &= \myvec{-1\\1}\\
-	\cos{\theta} &= \frac{\brak{\vec{C}-\vec{B}}^{\top} \brak{\vec{D} -\vec{B}} }{\norm{\vec{C}-\vec{B}} \norm{\vec{D} -\vec{B}}}\\
-	&= \frac{1}{\sqrt{2}}
-	\cos{\phi} &= \frac{\brak{\vec{C}-\vec{A}}^{\top} \brak{\vec{D} -\vec{A}} }{\norm{\vec{C}-\vec{A}} \norm{\vec{D} -\vec{A}}}\\
-	&= \frac{1}{\sqrt{2}}\\
-	\implies \theta &= \phi
+	\norm{\vec{x}-\brak{\frac{\vec{A}+\vec{C}}{2}}}^2 &= \norm{ \frac{\vec{A} -\vec{C}}{2}}^2 \\
+	\norm{\vec{x}}^2 = a^2
 \end{align}
+
+Points on this circle can be represented as
+\begin{align}
+	\vec{x} = a\myvec{\cos{\theta}\\\sin{\theta}}
+\end{align}
+
+Let
+\begin{align}
+	\vec{B} &= a\myvec{\cos{\theta_1}\\\sin{\theta_1}}\\
+	\vec{D} &= a\myvec{\cos{\theta_2}\\\sin{\theta_2}}
+\end{align}
+
+\begin{align}
+	\cos{\angle{CAD}} &= \frac{ \brak{\vec{C}-\vec{A}}^{\top} \brak{ \vec{D} -\vec{A}} }{\norm{ \vec{C} - \vec{A}} \norm{\vec{D} - \vec{A}}} \\
+			  &= \sqrt{1+ \cos{\theta_1}}
+\end{align}
+
+\begin{align}
+	\cos{\angle{CBD}} &= \frac{ \brak{\vec{C}-\vec{B}}^{\top} \brak{ \vec{D} -\vec{B}} }{\norm{ \vec{C} - \vec{B}} \norm{\vec{D} - \vec{B}}} 
+\end{align}
+
+
 
 \begin{table}[h!]
 	\begin{center}

@@ -7,17 +7,27 @@ from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import *
 
-A = np.array([[-1],[1]])
-B = np.array([[-1],[-1]])
-C = np.array([[1],[-1]])
-D = np.array([[1],[1]])
+a = 5
 
-O = (A + C)/2
-r = np.linalg.norm((A-C)/2)
+A = np.array([[-1*a],[0]])
+C = np.array([[a],[0]])
 
+O = (A+C)/2
+
+theta_1 = np.random.rand()
+B = a*np.array([[np.cos(theta_1)],[np.sin(theta_1)]])
+
+theta_2 = np.random.rand()
+D = a*np.array([[np.cos(theta_2)],[np.sin(theta_2)]])
+
+cos1 = (C-A).T @ (D-A)/ (np.linalg.norm(C-A)*np.linalg.norm(D-A))
+
+cos2 = (C-B).T @ (D-B)/ (np.linalg.norm(C-B)*np.linalg.norm(D-B))
+
+print(f"Error = {cos1 - cos2}")
 
 plt.figure(figsize=(10,10))
-c1 = circ_gen(O.T,r)
+c1 = circ_gen(O.T,a)
 
 l_AB = line_gen(A,B)
 l_BC = line_gen(B,C)
@@ -35,10 +45,10 @@ plt.plot(c1[0],c1[1])
 
 points = np.hstack((A,B,C,D,O))
 
-labels = np.array(['A(-1,-1)','B(-1,-1)','C(1,-1)','D(-1,1)','O(0,0)'])
+labels = np.array(['A','B','C','D','O'])
 
 for i in range(5):
-    plt.text(points[0][i]*1.2,points[1][i]*1.1,labels[i])
+    plt.text(points[0][i]*1.05,points[1][i]*1.05,labels[i])
 
 plt.scatter(points[0],points[1])
 plt.show()
