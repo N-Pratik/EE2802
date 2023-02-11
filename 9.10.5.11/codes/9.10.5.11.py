@@ -7,17 +7,17 @@ from line.funcs import *
 from triangle.funcs import *
 from conics.funcs import *
 
-a = 5
+a = 1
 
 A = np.array([[-1*a],[0]])
 C = np.array([[a],[0]])
 
 O = (A+C)/2
 
-theta_1 = np.random.rand()
+theta_1 = 0.6*np.pi# np.random.rand()
 B = a*np.array([[np.cos(theta_1)],[np.sin(theta_1)]])
 
-theta_2 = np.random.rand()
+theta_2 = -0.45*np.pi #np.random.rand()
 D = a*np.array([[np.cos(theta_2)],[np.sin(theta_2)]])
 
 cos1 = (C-A).T @ (D-A)/ (np.linalg.norm(C-A)*np.linalg.norm(D-A))
