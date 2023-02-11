@@ -15,6 +15,8 @@ D = np.array([[1],[1]])
 O = (A + C)/2
 r = np.linalg.norm((A-C)/2)
 
+
+plt.figure(figsize=(10,10))
 c1 = circ_gen(O.T,r)
 
 l_AB = line_gen(A,B)
