@@ -188,22 +188,31 @@ Find the equations of hyperbola having Vertices $\myvec{0\\\pm 3}$ and Foci $\my
 
 \section{Solution}
 
-Transverse axis: 
+$\vec{V}_1$ and $\vec{F}_1$ be vertex and focus on a side of center,and $\vec{V}_2$ and $\vec{F}_2$ on other
 \begin{align}
-	\myvec{1&0}\vec{x} = 0
+	\vec{V}_1 &= \myvec{0\\3}\\
+	\vec{V}_2 &= \myvec{0\\-3}\\
+	\vec{F}_1 &= \myvec{0\\5}\\
+	\vec{F}_2 &= \myvec{0\\-5}
 \end{align}
 
-Center of hyperbola:
+
+
+Transverse axis:
+Line joining two foci
 \begin{align}
-	\vec{O} = \myvec{0\\0}
+	\vec{m} &= \vec{F}_1 - \vec{F}_2\\
+	&= \myvec{0 \\ 10}\\
+	\vec{n} &= \myvec{1 \\ 0}\\
+	\myvec{1&0}\brak{\vec{x} -\vec{F}_1} &= 0\\
+	\myvec{1& 0}\vec{x} &= 0
 \end{align}
 
-$\vec{V_1}$ and $\vec{F_1}$ beign vertex and focus on same side of center,
+Center of hyperbola, $\vec{O}$ is given by:
 \begin{align}
-	\vec{V_1} = \myvec{0\\3}\\
-	\vec{F_1} = \myvec{0\\5}
+	\vec{O} &= \frac{\vec{F}_1 + \vec{F}_2}{2}\\
+	\vec{O} &= \myvec{0\\0}
 \end{align}
-
 Eccentricity,
 \begin{align}
 	e &= \frac{\norm{\vec{F_1}-\vec{O}}}{\norm{\vec{V_1}-\vec{O}}} \\
