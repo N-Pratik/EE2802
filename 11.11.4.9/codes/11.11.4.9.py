@@ -2,14 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import sys
-sys.path.insert(0,'/home/pratik/CoordGeo')
+sys.path.insert(0,'/home/pratik/AlphaBot2/Bluetooth-Cont')
 
 from conics.funcs import *
 
 Vert = np.array([[0],[3]])
 Focus = np.array([[0],[5]])
 O = np.array([[0],[0]])
-
 e = np.linalg.norm(Focus-O)/np.linalg.norm(Vert-O)
 
 n = (Vert -O)

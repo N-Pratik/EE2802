@@ -188,69 +188,79 @@ Find the equations of hyperbola having Vertices $\myvec{0\\\pm 3}$ and Foci $\my
 
 \section{Solution}
 
-$\vec{V}_1$ and $\vec{F}_1$ be vertex and focus on a side of center,and $\vec{V}_2$ and $\vec{F}_2$ on other
-\begin{align}
-	\vec{V}_1 &= \myvec{0\\3}\\
-	\vec{V}_2 &= \myvec{0\\-3}\\
-	\vec{F}_1 &= \myvec{0\\5}\\
-	\vec{F}_2 &= \myvec{0\\-5}
-\end{align}
+\begin{enumerate}
 
-
-
-Transverse axis:
+	\item Transverse axis:
 Line joining two foci
 \begin{align}
 	\vec{m} &= \vec{F}_1 - \vec{F}_2\\
 	&= \myvec{0 \\ 10}\\
-	\vec{n} &= \myvec{1 \\ 0}\\
 	\myvec{1&0}\brak{\vec{x} -\vec{F}_1} &= 0\\
 	\myvec{1& 0}\vec{x} &= 0
 \end{align}
 
-Center of hyperbola, $\vec{O}$ is given by:
+\item Center of hyperbola, $\vec{O}$ is given by:
 \begin{align}
 	\vec{O} &= \frac{\vec{F}_1 + \vec{F}_2}{2}\\
 	\vec{O} &= \myvec{0\\0}
 \end{align}
-Eccentricity,
-\begin{align}
-	e &= \frac{\norm{\vec{F_1}-\vec{O}}}{\norm{\vec{V_1}-\vec{O}}} \\
-	  &= \frac{5}{3}
-\end{align}
 
-The distance between center and directrix,
-\begin{align}
-	\frac{\norm{\vec{V_1}-\vec{O}}}{e}=\frac{9}{5}
-\end{align}
-
-Also, the directrix is perpendicular to the transverse axis.\\
-Hence, the equation of directrix is,
-\begin{align}
-	\myvec{0&1}\brak{\vec{x}-\myvec{0\\[1pt]\frac{9}{5}}} &= 0\\
-	\myvec{0&1}\vec{x} &= \frac{9}{5} 
-\end{align}
+\item Normal vector of directrix
+	\begin{align}
+		\vec{n} &= \text{direction vector of transverse axis}\\
+			&= \myvec{0 \\1}
+	\end{align}
 
 \begin{align}
 	\vec{V} &= \norm{\vec{n}}^2\vec{I} - e^2\vec{n}\vec{n}^{\top}\\
-		&= \myvec{1 & 0 \\ 0 & 1} - \frac{25}{9}\myvec{ 0 & 0 \\ 0 & 1}\\
-		&= \myvec{1&0\\0& -\frac{16}{9}}
+		&= \myvec{1 & 0 \\ 0 & 1} - e^2\myvec{ 0 & 0 \\ 0 & 1}\\
+		&= \myvec{1 &0\\ 0 & 1-e^2}
 \end{align}
 
 \begin{align}
 	\vec{u} &= ce^2\vec{n} -\norm{\vec{n}}^2\vec{F}\\
-		&= \myvec{0\\0}
+		&= \myvec{0\\ ce^2 - 5}
 \end{align}
 
 \begin{align}
 	f &= \norm{\vec{n}}^2\norm{\vec{F}}^2 - c^2e^2\\
-	  &= 16
+	  &= 25 - c^2 e^2
 \end{align}
 
 Equation of the hyperbola:
 \begin{align}
 	\vec{x}^{\top}\vec{V}\vec{x} +2\vec{u}^{\top}\vec{x}+f &= 0\\
-	\vec{x}^{\top}\myvec{1&0\\0& -\frac{16}{9}} \vec{x} +16 &= 0\\
+\end{align}
+
+Vertex lies on this curve,
+\begin{align}
+	\vec{v_1}^{\top}\vec{V}\vec{v_1} +2\vec{u}^{\top}\vec{v_1}+f &= 0\\
+	9\brak{1-e^2} + 6 \brak{ce^2 -5} - c^2e^2 +25 &= 0\\
+	4 -9e^2 +6ce^2 -c^2e^2 &= 0 \label{eq:1}
+\end{align}
+Also, the center is given by,
+\begin{align}
+	\vec{O} &= - \vec{V}^{-1} \vec{u}\\
+	\myvec{0\\0} &= \myvec{0\\ \frac{ce^2-5}{1-e^2}}\\
+	ce^2 &= 5
+	\label{eq:2}
+\end{align}
+
+Solving \eqref{eq:1} and \eqref{eq:2},
+\begin{align}
+	c &= \frac{9}{5} \\
+	e &= \frac{5}{3}\\
+\end{align}
+
+\begin{align}
+	\vec{V} &= \myvec{1&0\\0& -\frac{16}{9}} \\
+	\vec{u} &= \myvec{0\\0}\\
+	f &= 16\\
+\end{align}
+
+Equation of the Hyperbola,
+\begin{align}
+	\vec{x}^{\top} \myvec{1&0\\ 0 & -\frac{16}{9}} \vec{x} +16 =0
 \end{align}
 
 \begin{table}[h!]
@@ -268,6 +278,7 @@ Equation of the hyperbola:
     \label{fig:}
 \end{figure}
 
+\end{enumerate}
 \end{document}
 
 
