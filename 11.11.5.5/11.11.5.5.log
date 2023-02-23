@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  22 FEB 2023 12:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  23 FEB 2023 20:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**11.11.3.9.tex
-(./11.11.3.9.tex
+**11.11.5.5.tex
+(./11.11.5.5.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -25,7 +25,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen137
--- This is a 12 point document.
+-- This is an 11 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen138
 \CLASSINFOnormalsizeunitybaselineskip=\dimen139
 \IEEEnormaljot=\dimen140
@@ -49,24 +49,24 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <14> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <22> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <22> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
@@ -1414,8 +1414,8 @@ Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 )
-(./11.11.3.9.aux)
-\openout1 = `11.11.3.9.aux'.
+(./11.11.5.5.aux)
+\openout1 = `11.11.5.5.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 86.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
@@ -1478,28 +1478,28 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <11> not available
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 86.
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <11> not available
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <12> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 86.
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14> not available
+LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 86.
-LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <14> not available
+LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <17> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 86.
-LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 86.
-LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <22> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24> not available
 (Font)              Font shape `OT1/txr/bx/n' tried instead on input line 86.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 (Font)              Font shape `OT1/txr/bx/it' tried instead on input line 86.
 
--- Lines per column: 50 (exact).
+-- Lines per column: 52 (exact).
 LaTeX Info: Redefining \celsius on input line 86.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 86.
 
@@ -1562,9 +1562,9 @@ LaTeX Info: Redefining \ref on input line 86.
 LaTeX Info: Redefining \pageref on input line 86.
 LaTeX Info: Redefining \nameref on input line 86.
 
-(./11.11.3.9.out) (./11.11.3.9.out)
+(./11.11.5.5.out) (./11.11.5.5.out)
 \@outlinefile=\write4
-\openout4 = `11.11.3.9.out'.
+\openout4 = `11.11.5.5.out'.
 
 \c@lstlisting=\count374
 \c@theorem=\count375
@@ -1573,113 +1573,81 @@ LaTeX Info: Redefining \nameref on input line 86.
 \c@lemma=\count378
 \c@example=\count379
 \c@rem=\count380
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 188.
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
-7.
+8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-87.
+88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-87.
+88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-87.
+88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-87.
+88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-Overfull \hbox (110.29533pt too wide) detected at line 204
- []$[]  \OML/txmi/m/it/12 ^^V[] \OT1/txr/m/n/12 = [] []$ []  
- []
+Underfull \hbox (badness 10000) in paragraph at lines 192--195
 
-
-Underfull \vbox (badness 1342) has occurred while \output is active []
-
-
-Overfull \hbox (11.07094pt too wide) detected at line 239
-[]
- []
-
-
-Overfull \hbox (36.82307pt too wide) detected at line 247
-[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
-
- []
-
-
-Overfull \hbox (47.16304pt too wide) detected at line 258
-[]
- []
-
-
-Overfull \hbox (79.00308pt too wide) detected at line 264
-[]
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-Overfull \hbox (76.3151pt too wide) detected at line 317
-[]
- []
 
 (./tables/table_1.tex)
-Overfull \hbox (25.30835pt too wide) in paragraph at lines 7--324
+Overfull \hbox (48.65802pt too wide) in paragraph at lines 7--246
  [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figs/Figure_1.png, id=84, 462.528pt x 346.896pt>
+<figs/Figure_1.png, id=39, 462.528pt x 346.896pt>
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
-Package pdftex.def Info: figs/Figure_1.png  used on input line 331.
+Package pdftex.def Info: figs/Figure_1.png  used on input line 253.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 <./figs/Figure_1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 336.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 336.
- (./11.11.3.9.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 336.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 336.
-Package rerunfilecheck Info: File `11.11.3.9.out' has not changed.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+] [2
+
+ <./figs/Figure_1.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
+ (./11.11.5.5.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
+Package rerunfilecheck Info: File `11.11.5.5.out' has not changed.
 (rerunfilecheck)             Checksum: 1210BCF5FEAE7A75A114051724EF25E7;85.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 336.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 258.
  ) 
 Here is how much of TeX's memory you used:
- 39821 strings out of 481239
- 901818 string characters out of 5920378
- 1308822 words of memory out of 5000000
- 54216 multiletter control sequences out of 15000+600000
- 594504 words of font info for 150 fonts, out of 8000000 for 9000
+ 39800 strings out of 481239
+ 901668 string characters out of 5920378
+ 1303784 words of memory out of 5000000
+ 54225 multiletter control sequences out of 15000+600000
+ 598048 words of font info for 156 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,17n,91p,482b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,91p,482b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1688,10 +1656,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 11.11.3.9.pdf (2 pages, 70910 bytes).
+Output written on 11.11.5.5.pdf (2 pages, 65966 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 118 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
+ 29 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

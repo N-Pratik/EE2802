@@ -1,4 +1,4 @@
-\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\documentclass[journal,11pt,twocolumn]{IEEEtran}
 %
 \usepackage{setspace}
 \usepackage{gensymb}
@@ -163,7 +163,7 @@ columns=fullflexible
 \vspace{3cm}
 
 
-\title{Problem: 11.11.3.9}
+\title{Que: 11.11.5.5}
 \author{Nikam Pratik Balasaheb (EE21BTECH11037)}
 
 
@@ -184,147 +184,68 @@ columns=fullflexible
 %\renewcommand{\theequation}{\theenumi}
 
 \section{Problem}
-Find the co-ordinates of the foci, the vertices, the length of major axis, the minor axis, the eccentricity and the length of latus rectum of the ellipse $4x^2+9y^2=36$.
+
+A rod of length 12cm moves with its ends always touching the coordinate axes. Determine the equation of locus of a point  P on the rod, which is 3cm from the end in contact with $x-axis$.
 
 \section{Solution}
+
+let the angle made by the rod with x-axis be $\theta$\\
+The x-intecept and y-intercept of rod will be:\\
 \begin{enumerate}
 
-	\item Given ellipse equation:
-\begin{align}
-	\vec{x}^{\top} \vec{V} \vec{x} + 2 \vec{u}^{\top}\vec{x} +f &= 0\\
-	here,\;\;
-	\vec{V} &= \myvec{\frac{4}{9} & 0\\0&1}\\
-	f &= -4\\
-	\vec{u} &= \myvec{0\\0}
-\end{align}
-
-\item points of intersection of a line $\vec{x} = \vec{A}+ \mu\vec{h}$ with ellipse are given by:
-
-\begin{multline}
-	\mu_i = \frac{1}{\vec{m}^{\top}\vec{V}\vec{m}} \brak{-m^{\top}\brak{\vec{V}\vec{h}+\vec{u}} \pm\newline \sqrt{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}^2 - \text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}}}}
-\end{multline}
-
-
-where,
-\begin{align}
-	\text{g}\brak{\vec{h}} = \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
-\end{align}
-
-
-\item Center of the ellipse,
+\item x-intercept:
 	\begin{align}
-		\vec{C} &= -\vec{V}^{-1}\vec{u}\\
-			&= \myvec{0\\0}
+	\vec{A} = \myvec{12\cos{\theta}\\0}
 	\end{align}
 
-\item Major axis
+\item y-intercept:
 	\begin{align}
-		\vec{p_2}^{\top}\brak{\vec{x}-\vec{C}} &=0\\
-		\myvec{0&1}\vec{x} &= 0\\
-		i.e., \; \vec{x} &= \mu \myvec{1\\0}
-	\end{align}
-\item Vertices
-
-Vertices lie on major axis, therefore let
-\begin{align}
-	\vec{v} &= {\mu}_i \myvec{1\\0}\\
-	{\mu}_i &= \pm 3
-\end{align}
-Vertices are $\myvec{3\\0}$ and $\myvec{-3\\0}$ 
-
-\item Length of major axis
-\begin{align}
-	\text{length of major axis}	&= \text{distance between vertices}\\
-					&= \norm{ \vec{v_1} - \vec{v_2}}\\
-					&=6
-\end{align}
-
-\item minor axis
-	\begin{align}
-		\text{normal to minor axis} &= \text{direction vector of major axis}\\
-					   &= \myvec{1\\0}\\
-		\myvec{1&0} \vec{x} &= 0\\
-		i.e., \;\; \vec{x} &= \mu \myvec{0\\1}
+		\vec{B} =\myvec{0\\12\sin{\theta}}
 	\end{align}
 
-Points of intersection of minor axis with ellipse be $\mu_i \myvec{0\\1}$
+\item direction vector of rod:
+	\begin{align}
+		\vec{A}-\vec{B} = 12\myvec{\cos{\theta} \\ -\sin{\theta}}
+	\end{align}
+	Unit vector along direction vector:
+	\begin{align}
+		\vec{m} = \myvec{\cos{\theta} \\ -\sin{\theta}}
+	\end{align}
 
-On solving,\\
-\begin{align}
-\mu_i = \pm2
-\end{align}
-
-\begin{align}
-	\text{Points of intersection of minor axis with ellipse} &= \pm \myvec{0\\2}
-\end{align}
-
-\item Length of minor axis
-\begin{align}
-	\text{length of minor axis} &= \text{distance between Points of intersection}\\
-				    &= 4
-\end{align}
-
-Normal to directrix,
-\begin{align}
-	\vec{n} &= \text{direction vector of major axis}\\
-		&= \myvec{1\\0} \label{eq:1}
-\end{align}
-\begin{align}
-	\vec{V} &= \norm{\vec{n}}^2 \vec{I} - e^2 \vec{n} \vec{n}^{\top} = \myvec{\frac{4}{9}&0\\0&1}\\
-	\vec{u} &= ce^2 \vec{n} - \norm{\vec{n}}^2\vec{F} = \myvec{0\\0}\\
-	f &= \norm{\vec{n}}^2 \norm{\vec{F}}^2 - c^2e^2  = -4
-\end{align}
-
-\item Eccentricity
-\begin{align}
-	e = \frac{\sqrt{5}}{3} 
-\end{align}
-
-\begin{align}
-	\vec{F} = \frac{5c}{9}\myvec{1\\0}
-\end{align}
-
-\begin{align}
-	c &= \pm \frac{9}{\sqrt{5}}
-\end{align}
-
-\item Foci 
-\begin{align}
-	\vec{F} &= \myvec{ \pm \sqrt{5} \\0}
-\end{align}
-
-\item equation of Latus Recta
-\begin{align}
-	\vec{n}^{\top} \brak{\vec{x} -\vec{F}} &= 0\\
-	\myvec{ 1&0} \vec{x} &= 3\\
-	i.e., \vec{x} &= \myvec{3\\0} + \mu \myvec{0\\1} 
-\end{align}
-
-Let points of intersection of latus rectum and curve be,
-\begin{align}
-	\vec{x} = \vec{F} + \mu_i \vec{m}
-\end{align}
-
-
-here,
-\begin{align}
-	\mu_i = \pm \frac{4}{3}
-\end{align}
-
-\item Length of latus recta
-\begin{align}
-\text{length of latus recta} &= \text{distance between points of intersection}\\
-&= \frac{8}{3}
-\end{align}
-
+\item given point $\vec{P}$:
+	\begin{align}
+		\vec{P} &= \vec{A} - 3 \vec{m}\\
+			&= \myvec{9 \cos{\theta} \\ 3 \sin{\theta}}
+	\end{align}
+\item parametric form of locus:
+	\begin{align}
+		\vec{x} = \myvec{9\cos{\theta} \\ 3\sin{\theta}}\\
+	\end{align}
+	Consider $\vec{Q} = \myvec{\frac{1}{9}&0\\0&\frac{1}{3}}$
+	\begin{align}
+		\vec{Q}\vec{x} &= \myvec{\cos{\theta}\\ \sin{\theta}}\\
+		\norm{\vec{Q}\vec{x}}^2 &= 1\\
+		\brak{\vec{Q}\vec{x}}^{\top} \brak{\vec{Q}\vec{x}} &= 1\\
+		\vec{x}^{\top}\vec{Q}^{\top}\vec{Q}\vec{x} &= 1\\
+		\vec{x}^T\myvec{\frac{1}{81} & 0 \\ 0 & \frac{1}{9}} \vec{x} &= 1
+	\end{align}
+	The locus of point $\vec{P}$ is a conic 
+	\begin{align}\vec{x}^{\top} \vec{V} \vec{x} + 2 \vec{u}^{\top} \vec{x} +f= 0
+	\end{align}
+	where,
+	\begin{align}
+		\vec{V} &= \myvec{\frac{1}{81}&0\\0&\frac{1}{9}}\\
+		\vec{u} &= \myvec{0\\0}\\
+		f &= -1
+	\end{align}
 \end{enumerate}
 
 \begin{table}[h!]
-\begin{center}
-\input{tables/table_1.tex}
-\end{center}
-\caption{Table 1}
-\label{tab:}
+	\begin{center}
+		\input{tables/table_1.tex}
+	\end{center}
+	\caption{Table 1}
+	\label{tab:}
 \end{table}
 
 \begin{figure}[h!]
