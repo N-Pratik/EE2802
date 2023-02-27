@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  27 FEB 2023 11:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.1.4)  27 FEB 2023 11:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1632,6 +1632,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
+
+! Package amsmath Error: Multiple \label's: label 'eq:3' will be lost.
+
+See the amsmath package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.275 \end{align}
+                 
+? H
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+? I H
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1657,13 +1672,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 340.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 340.
 Package rerunfilecheck Info: File `11.11.3.9.out' has not changed.
 (rerunfilecheck)             Checksum: 1210BCF5FEAE7A75A114051724EF25E7;85.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 340.
  ) 
 Here is how much of TeX's memory you used:
- 39830 strings out of 481239
- 901953 string characters out of 5920378
+ 39832 strings out of 481239
+ 901965 string characters out of 5920378
  1307822 words of memory out of 5000000
- 54216 multiletter control sequences out of 15000+600000
+ 54218 multiletter control sequences out of 15000+600000
  594504 words of font info for 150 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,17n,91p,482b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1675,7 +1694,7 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 11.11.3.9.pdf (2 pages, 73053 bytes).
+Output written on 11.11.3.9.pdf (2 pages, 73272 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
