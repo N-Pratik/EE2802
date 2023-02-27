@@ -199,11 +199,9 @@ Find the co-ordinates of the foci, the vertices, the length of major axis, the m
 \end{align}
 
 \item points of intersection of a line $\vec{x} = \vec{A}+ \mu\vec{h}$ with ellipse are given by:
-
 \begin{multline}
-	\mu_i = \frac{1}{\vec{m}^{\top}\vec{V}\vec{m}} \brak{-m^{\top}\brak{\vec{V}\vec{h}+\vec{u}} \pm\newline \sqrt{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}^2 - \text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}}}}
+	\mu_i = \frac{1}{\vec{m}^{\top}\vec{V}\vec{m}} \brak{-m^{\top}\brak{\vec{V}\vec{h}+\vec{u}} \pm \sqrt{\brak{\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}}^2 - \text{g}\brak{\vec{h}}\brak{\vec{m}^{\top}\vec{V}\vec{m}}}}
 \end{multline}
-
 
 where,
 \begin{align}
@@ -213,13 +211,12 @@ where,
 
 \item Center of the ellipse,
 	\begin{align}
-		\vec{C} &= -\vec{V}^{-1}\vec{u}\\
+		\vec{C} &= -\vec{V}^{-1}u\\
 			&= \myvec{0\\0}
 	\end{align}
 
 \item Major axis
 	\begin{align}
-		\vec{p_2}^{\top}\brak{\vec{x}-\vec{C}} &=0\\
 		\myvec{0&1}\vec{x} &= 0\\
 		i.e., \; \vec{x} &= \mu \myvec{1\\0}
 	\end{align}
@@ -228,7 +225,11 @@ where,
 Vertices lie on major axis, therefore let
 \begin{align}
 	\vec{v} &= {\mu}_i \myvec{1\\0}\\
-	{\mu}_i &= \pm 3
+	m^{\top}\vec{V}\vec{m} &= \frac{4}{9}\\
+	\vec{m}^{top}\brak{\vec{V}\vec{h}+\vec{u}} &= 0\\
+	g(h) &= -4\\
+	{\mu}_i &= \frac{0 \pm \sqrt{0 - \brak{-4}\frac{4}{9}}}{\frac{4}{9}}\\
+		&= \pm 3
 \end{align}
 Vertices are $\myvec{3\\0}$ and $\myvec{-3\\0}$ 
 
@@ -241,18 +242,16 @@ Vertices are $\myvec{3\\0}$ and $\myvec{-3\\0}$
 
 \item minor axis
 	\begin{align}
-		\text{normal to minor axis} &= \text{direction vector of major axis}\\
-					   &= \myvec{1\\0}\\
-		\myvec{1&0} \vec{x} &= 0\\
-		i.e., \;\; \vec{x} &= \mu \myvec{0\\1}
+	\myvec{1&0} \vec{x} = 0\\
+	i.e., \;\; \vec{x} = \mu \myvec{0\\1}\\	
+	m^{\top}\vec{V}\vec{m} &= 1\\
+	\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} &= 0\\
+	g(h) &= -4\\
+	{\mu}_i &= 0 \pm \sqrt{0 - \brak{-4}}\\
+		&= \pm 2
 	\end{align}
 
 Points of intersection of minor axis with ellipse be $\mu_i \myvec{0\\1}$
-
-On solving,\\
-\begin{align}
-\mu_i = \pm2
-\end{align}
 
 \begin{align}
 	\text{Points of intersection of minor axis with ellipse} &= \pm \myvec{0\\2}
@@ -308,7 +307,11 @@ Let points of intersection of latus rectum and curve be,
 
 here,
 \begin{align}
-	\mu_i = \pm \frac{4}{3}
+	m^{\top}\vec{V}\vec{m} &= 1\\
+	\vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}} &= 0 \\
+	g(h) &= -\frac{16}{9}\\
+	{\mu}_i &= {0 \pm \sqrt{0 - \brak{-1}\frac{16}{9}}}\\
+		&= \pm \frac{4}{3}
 \end{align}
 
 \item Length of latus recta
