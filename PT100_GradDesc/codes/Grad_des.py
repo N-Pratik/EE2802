@@ -11,8 +11,7 @@ learn_rate = 472e-7
 tolerance = 1
 
 A= np.random.rand()
-B= np.random.rand()
-
+B= np.random.rand() 
 n = np.array([[A],[B]])
 
 def cost(n):
