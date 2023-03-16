@@ -40,8 +40,14 @@ plt.clf()
 
 test = np.loadtxt('Test_data.txt')
 
-T_test = test[:,0]
+T_test = test[:,[0]]
 V_test = test[:,1]
+
+X_test = np.hstack((np.ones((T_test.shape[0],1)),T_test))
+
+V_est_T = (X_test@n).T
+Error = np.sum((V_test-V_est_T)**2)/test.shape[0]
+print(f"Error in Testing ={Error}")
 
 plt.plot(x,y)
 plt.scatter(T_test,V_test, color ='red')

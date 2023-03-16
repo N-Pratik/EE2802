@@ -163,7 +163,7 @@ columns=fullflexible
 \vspace{3cm}
 
 
-\title{PT100 Expeiment using Gradient Descent}
+\title{PT100 Experiment using Gradient Descent}
 \author{Nikam Pratik Balasaheb (EE21BTECH11037)}
 
 
@@ -193,7 +193,8 @@ columns=fullflexible
 
 Here, cost function or error function is defined as mean of squared errors.i.e.
 \begin{align}
-	Cost(\vec{n}) &= \frac{1}{m}\sum_{i=1}^{m} (y_i - \hat{y}_i)^2 \\ 
+	Cost(\vec{n}) &= \frac{1}{m}\sum_{i=1}^{m} (y_i - \hat{y}_i)^2 \\
+	&= \frac{1}{m} \brak{ \vec{X}\vec{n} - \vec{y} }^T \brak{ \vec{X}\vec{n} - \vec{y} }
 \end{align}
 where $y_i$ is the actual value and $\hat{y}_i$ is the predicted value and $m$ is the number of data points.\\
 $\vec{n}$ is the vector of parameters of linear relation.\\
@@ -216,8 +217,64 @@ The plot of cost function with respect to $A$ and $B$ is shown in figure \ref{fi
 For minimizing the cost function, gradient descent method is used.\\
 The gradient of cost function is given by:
 \begin{align}
-	\frac{\partial{Cost}}{\partial{n}} = \frac{1}{m}\sum_{i=1}^{m} 2(y_i - \hat{y}_i) \frac{\partial{\hat{y}_i}}{\partial{n}} 
+	\frac{\partial{Cost}}{\partial{n}} = \frac{1}{m}\sum_{i=1}^{m} 2(y_i - \hat{y}_i) \frac{\partial{\hat{y}_i}}{\partial{n}}\\
+	= \frac{2}{m} \brak{ \vec{X}\vec{n} - \vec{y} }^T \vec{X}
+\end{align}
 
+The parameters are updated as,
+\begin{align}
+	\vec{n} = \vec{n} - \alpha \frac{\partial{Cost}}{\partial{n}}
+\end{align}
+
+where $\alpha$ is the learning rate.\\
+Above equation is run on loop until the cost function is lesser than a certain tolerance.
+
+\section{Results}
+	Above method is implemented in \texttt{codes/Grad\_Des.py}
+	with tolerance of 1 and Learning rate of $4.72 \times 10^{-5}$\\
+	
+	\begin{table}[h!]
+	\centering
+	       \input{tables/Training_data.tex}
+	       \caption{Data used for training}
+	       \label{tab:Train_data}
+	\end{table}
+
+	The data used for training the model is given in Table \ref{tab:Train_data}.
+	Resulting parameters:
+	\begin{align}
+		n = \myvec{78.37174146 \\ 0.28238033}
+	\end{align}
+
+	\begin{figure}[h!]
+	  \centering
+	   \includegraphics[width=\linewidth]{figs/Training_GD.png}
+	   \caption{Training}	\label{fig:Train}
+	\end{figure}
+	
+	The plot of training data and predicted line is shown in figure \ref{fig:Train}.
+
+\section{Testing}
+	The model is used to predict the results for the test data.
+	\begin{table}[h!]
+        \centering 
+               \input{tables/Testing_data.tex}
+               \caption{Data used for testing}    
+               \label{tab:Test_data}
+        \end{table}
+
+	The data used for testing in given in Table \ref{tab:Test_data}
+	
+	\begin{figure}[h!]
+	  \centering
+	   \includegraphics[width=\linewidth]{figs/Test_GD.png}
+	   \caption{Testing}
+	   \label{fig:Test}
+	\end{figure}
+
+	The plot of test data and predicted line is shown in figure \ref{fig:Test}.
+
+	Mean Squared Error in Testing = 0.62699
 %\begin{figure}[h!]
 %  \centering
 %   \includegraphics[width=\linewidth]{figs/Figure_1.png}

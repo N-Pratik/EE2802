@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.5)  11 MAR 2023 20:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.5)  16 MAR 2023 10:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1432,4 +1432,132 @@ Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count365
+)
+LaTeX Info: Redefining \ref on input line 86.
+LaTeX Info: Redefining \pageref on input line 86.
+LaTeX Info: Redefining \nameref on input line 86.
+
+(./PT100_GradDes.out) (./PT100_GradDes.out)
+\@outlinefile=\write4
+\openout4 = `PT100_GradDes.out'.
+
+\c@lstlisting=\count366
+\c@theorem=\count367
+\c@problem=\count368
+\c@proposition=\count369
+\c@lemma=\count370
+\c@example=\count371
+\c@rem=\count372
+LaTeX Font Info:    Trying to load font information for OT1+txtt on input line 
+187.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txtt.fd
+File: ot1txtt.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 19
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
+95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
+95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
+95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
+95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 198--201
+
+ []
+
+<figs/cost.png, id=25, 462.528pt x 346.896pt>
+File: figs/cost.png Graphic file (type png)
+<use figs/cost.png>
+Package pdftex.def Info: figs/cost.png  used on input line 208.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
+[]\OT1/txr/m/n/12 Above method is im-ple-mented in
+ []
+
+
+Underfull \hbox (badness 1496) in paragraph at lines 233--235
+\OT1/txtt/m/n/12 codes/Grad[]Des.py \OT1/txr/m/n/12 with tol-er-ance of 1 and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
+
+ []
+
+(./tables/Training_data.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.m
+ap}
+
+
+ <./figs/cost.png>]
+<figs/Training_GD.png, id=54, 462.528pt x 346.896pt>
+File: figs/Training_GD.png Graphic file (type png)
+<use figs/Training_GD.png>
+Package pdftex.def Info: figs/Training_GD.png  used on input line 251.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+ (./tables/Testing_data.tex)
+<figs/Test_GD.png, id=57, 462.528pt x 346.896pt>
+File: figs/Test_GD.png Graphic file (type png)
+<use figs/Test_GD.png>
+Package pdftex.def Info: figs/Test_GD.png  used on input line 270.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./figs/Training_GD.png> <./figs/Test_GD.png>] (./PT100_GradDes.aux)
+Package rerunfilecheck Info: File `PT100_GradDes.out' has not changed.
+(rerunfilecheck)             Checksum: 7264E5693ACDA277CCFFCB118F00FA7C;340.
+ ) 
+Here is how much of TeX's memory you used:
+ 45015 strings out of 478287
+ 1036756 string characters out of 5849290
+ 1532234 words of memory out of 5000000
+ 62448 multiletter control sequences out of 15000+600000
+ 533323 words of font info for 158 fonts, out of 8000000 for 9000
+ 1144 hyphenation exceptions out of 8191
+ 91i,13n,93p,417b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
+fonts/txbtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/ti
+mes/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on PT100_GradDes.pdf (2 pages, 156805 bytes).
+PDF statistics:
+ 123 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 60 words of extra memory for PDF output out of 10000 (max. 10000000)
+
