@@ -227,10 +227,8 @@ Bisector of angles A,B and C of a triangle ABC intersect its circumcircle at D,E
 
 \item Circumradius of triangle ABC,
 	\begin{align}
-		R &= \frac{abc}{4\Delta}\\
-		&= \frac{b}{2\sin{\theta}}
+		R &= \norm{\vec{O}-\vec{A}}\\
 	\end{align}
-	where $\Delta$ is the area of the triangle.
 \item For Circumcircle of triangle ABC,
 	Writing equation of circle in form $\vec{x}\vec{V}\vec{x}^{\top} 
 		\vec{u}^{\top}\vec{x} + f = 0$,
@@ -238,29 +236,26 @@ Bisector of angles A,B and C of a triangle ABC intersect its circumcircle at D,E
 			\vec{V} &= \myvec{1&0\\0&1}\\
 			\vec{u} &= -\vec{O}\\
 			f &= \norm{\vec{O}}^2 - R^2
+				&= 2\vec{A}^{\top} \vec{O} - \norm{\vec{O}}^2
 		\end{align}
-\item Incenter of triangle ABC:
-	\begin{align}
-		\vec{I} &= \frac{a \vec{A} + b\vec{B} + c \vec{C}}{a+b+c}\\
-		&= \frac{ac}{a+b+c}\myvec{\cos{\theta}+1 \\ \sin{\theta}}
-	\end{align}
 
 \item angular bisectors:
 	Expressing the line equations in form $\vec{x} = \vec{h} + \mu\vec{m}$,
 	\begin{enumerate}
 		\item Angular Bisector of angle A:
 			\begin{align}
-				\vec{m} = \vec{I} -\vec{A}\\
-				\vec{h} = \vec{A}
+				\vec{m} &= \brak{\vec{B} - \vec{A}} + \brak{\vec{C}-\vec{A}} \\
+						&= \vec{B} + \vec{C} - 2\vec{A}\\
+				\vec{h} &= \vec{A}
 			\end{align}
 		\item Angular Bisector of angle B:
 			\begin{align}
-				\vec{m} = \vec{I} -\vec{B}\\
+				\vec{m} = \vec{A} +\vec{C}  - 2\vec{B}\\
 				\vec{h} = \vec{B}
 			\end{align}
 		\item Angular Bisector of angle C:
 			\begin{align}
-				\vec{m} = \vec{I} -\vec{C}\\
+				\vec{m} = \vec{A} + \vec{B}  - 2\vec{C}\\
 				\vec{h} = \vec{C}
 			\end{align}
 	\end{enumerate}
