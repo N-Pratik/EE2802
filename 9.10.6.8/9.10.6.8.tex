@@ -227,7 +227,7 @@ Bisector of angles A,B and C of a triangle ABC intersect its circumcircle at D,E
 
 \item Circumradius of triangle ABC,
 	\begin{align}
-		R &= \norm{\vec{O}-\vec{A}}\\
+		R &= \norm{vec{A}-\vec{O}}
 	\end{align}
 \item For Circumcircle of triangle ABC,
 	Writing equation of circle in form $\vec{x}\vec{V}\vec{x}^{\top} 
@@ -235,8 +235,8 @@ Bisector of angles A,B and C of a triangle ABC intersect its circumcircle at D,E
 		\begin{align}
 			\vec{V} &= \myvec{1&0\\0&1}\\
 			\vec{u} &= -\vec{O}\\
-			f &= \norm{\vec{O}}^2 - R^2
-				&= 2\vec{A}^{\top} \vec{O} - \norm{\vec{O}}^2
+			f &= \norm{\vec{O}}^2 - R^2\\
+			&= 2\vec{O}^{\top}\vec{A} - \norm{\vec{A}}^2
 		\end{align}
 
 \item angular bisectors:
@@ -244,19 +244,21 @@ Bisector of angles A,B and C of a triangle ABC intersect its circumcircle at D,E
 	\begin{enumerate}
 		\item Angular Bisector of angle A:
 			\begin{align}
-				\vec{m} &= \brak{\vec{B} - \vec{A}} + \brak{\vec{C}-\vec{A}} \\
-						&= \vec{B} + \vec{C} - 2\vec{A}\\
+				\vec{m} &= \brak{\vec{C} -\vec{A}}++ \brak{ \vec{B} -\vec{A}}\\
+				&= \vec{B} + \vec{C} -2\vec{A}\\
 				\vec{h} &= \vec{A}
 			\end{align}
 		\item Angular Bisector of angle B:
 			\begin{align}
-				\vec{m} = \vec{A} +\vec{C}  - 2\vec{B}\\
-				\vec{h} = \vec{B}
+				\vec{m} &= \brak{\vec{C} -\vec{B}+ \brak{ \vec{A} -\vec{B}}\\
+				                                &= \vec{A} + \vec{C} -2\vec{B}\\
+				\vec{h} &= \vec{A
 			\end{align}
 		\item Angular Bisector of angle C:
 			\begin{align}
-				\vec{m} = \vec{A} + \vec{B}  - 2\vec{C}\\
-				\vec{h} = \vec{C}
+				\vec{m} &= \brak{\vec{A} -\vec{C}}+ \brak{ \vec{B} -\vec{C}}\\
+			                                &= \vec{A} + \vec{B} -2\vec{C}\\
+			\vec{h} &= \vec{C}
 			\end{align}
 	\end{enumerate}
 
