@@ -43,21 +43,18 @@ O = np.linalg.solve(con,res)
 print(f"CIRCUMCENTER:{O}")
 
 #PARAMETERS FOR CIRCUMCIRCLE
-Area = a*c*np.sin(theta)/2
-#R = a*b*c/(4*Area)
-R = b/(2*np.sin(theta))
+R = np.linalg.norm(O-B)
 V = np.array([[1,0],[0,1]])
 u = -1*O
 f = O.T@O - R**2
 
-#INCENTER
-I = (a*A + b*B + c*C)/(a+b+c)
-print(f"INCENTER: {I}")
 
 #ANGULAR BISECTORS
-m1 = I-A
-m2 = I-B
-m3 = I-C
+m1 = B+C-2*A
+m2 = A+C-2*B
+m3 = A+B-2*C
+
+print(f"m1:{m1}, m2:{m2}, m3:{m3}")
 
 #FINDING D
 mu_D = mu_i(V,u,m1,A,f)[0]

@@ -196,7 +196,7 @@ Bisector of angles A,B and C of a triangle ABC intersect its circumcircle at D,E
 		\vec{C} &= \myvec{a\\0}\\
 		\vec{A} &= c\myvec{\cos{\theta}\\ \sin{\theta}}
 	\end{align}
-	For ease of calculation let's assume $\theta = 60{\degree}$.
+	For ease of calculation let's assume $\theta = 60{\degree}, a = c = 5$.
 
 \item side length $b$ is given by:
 	\begin{align}
@@ -227,7 +227,7 @@ Bisector of angles A,B and C of a triangle ABC intersect its circumcircle at D,E
 
 \item Circumradius of triangle ABC,
 	\begin{align}
-		R &= \norm{vec{A}-\vec{O}}
+		R &= \norm{\vec{A}-\vec{O}}
 	\end{align}
 \item For Circumcircle of triangle ABC,
 	Writing equation of circle in form $\vec{x}\vec{V}\vec{x}^{\top} 
@@ -244,20 +244,20 @@ Bisector of angles A,B and C of a triangle ABC intersect its circumcircle at D,E
 	\begin{enumerate}
 		\item Angular Bisector of angle A:
 			\begin{align}
-				\vec{m} &= \brak{\vec{C} -\vec{A}}++ \brak{ \vec{B} -\vec{A}}\\
-				&= \vec{B} + \vec{C} -2\vec{A}\\
+				\vec{m} &= \brak{\vec{C} -\vec{A}} + \brak{ \vec{B} -\vec{A}}\\
+					&= \vec{B} + \vec{C} -2\vec{A}\\
 				\vec{h} &= \vec{A}
 			\end{align}
 		\item Angular Bisector of angle B:
 			\begin{align}
-				\vec{m} &= \brak{\vec{C} -\vec{B}+ \brak{ \vec{A} -\vec{B}}\\
-				                                &= \vec{A} + \vec{C} -2\vec{B}\\
-				\vec{h} &= \vec{A
+				\vec{m} &= \brak{\vec{C} -\vec{B}}+ \brak{ \vec{A} -\vec{B}}\\
+				        &= \vec{A} + \vec{C} -2\vec{B}\\
+				\vec{h} &= \vec{A}
 			\end{align}
 		\item Angular Bisector of angle C:
 			\begin{align}
 				\vec{m} &= \brak{\vec{A} -\vec{C}}+ \brak{ \vec{B} -\vec{C}}\\
-			                                &= \vec{A} + \vec{B} -2\vec{C}\\
+			                &= \vec{A} + \vec{B} -2\vec{C}\\
 			\vec{h} &= \vec{C}
 			\end{align}
 	\end{enumerate}
@@ -274,7 +274,13 @@ where,
         \text{g}\brak{\vec{h}} = \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
 \end{align}
 
-\item The points of intersection D, E and F are found using above method. Refer \texttt{codes/9.10.6.8.py}.
+\item The points of intersection D, E and F are found using above method. Refer \texttt{codes/9.10.6.8.py}. The resulting $ \vec{D} , \vec{E}, \vec{F}$ are given in table \ref{tab:POIs}. 
+\begin{table}[h!]
+\centering
+	\input{tables/DE&F.tex}
+        \caption{Table}		\label{tab:POIs}
+\end{table}
+
 
 \item The desired angle i.e $\angle DEF$ is found by using,
 	\begin{align}
@@ -292,7 +298,7 @@ where,
         \label{tab:}
 \end{table}
 
-\begin{figure}[h!]
+\begin{figure}[h]
   \centering
    \includegraphics[width=\linewidth,height = \linewidth]{figs/Figure_1.png}
    \caption{Figure}
