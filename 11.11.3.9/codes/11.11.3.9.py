@@ -95,4 +95,5 @@ plt.plot(lat[0],lat[1])
 
 maj =line_gen(v1,v2)
 plt.plot(maj[0],maj[1])
+plt.grid()
 plt.savefig("../figs/Figure_1.png")
