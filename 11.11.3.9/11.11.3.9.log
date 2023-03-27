@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.5)  27 MAR 2023 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.5)  27 MAR 2023 14:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1519,20 +1519,17 @@ File: figs/Figure_1.png Graphic file (type png)
 Package pdftex.def Info: figs/Figure_1.png  used on input line 342.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 [2 <./figs/Figure_1.png>] (./11.11.3.9.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `11.11.3.9.out' has not changed.
 (rerunfilecheck)             Checksum: 88172CAD2D937F83DD86B95AEE9FF7EC;161.
  ) 
 Here is how much of TeX's memory you used:
- 45014 strings out of 478287
- 1036408 string characters out of 5849290
- 1554371 words of memory out of 5000000
+ 45012 strings out of 478287
+ 1036378 string characters out of 5849290
+ 1553371 words of memory out of 5000000
  62408 multiletter control sequences out of 15000+600000
  531425 words of font info for 154 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 91i,17n,93p,413b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 91i,17n,93p,413b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1541,10 +1538,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 11.11.3.9.pdf (2 pages, 77928 bytes).
+Output written on 11.11.3.9.pdf (2 pages, 77925 bytes).
 PDF statistics:
- 161 PDF objects out of 1000 (max. 8388607)
- 137 compressed objects within 2 object streams
- 70 named destinations out of 1000 (max. 500000)
+ 159 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 68 named destinations out of 1000 (max. 500000)
  34 words of extra memory for PDF output out of 10000 (max. 10000000)
 
