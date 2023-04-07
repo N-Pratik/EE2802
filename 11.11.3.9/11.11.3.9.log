@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.5)  27 MAR 2023 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.5)  7 APR 2023 12:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1485,16 +1485,6 @@ Overfull \hbox (39.60078pt too wide) detected at line 204
  []
 
 
-Overfull \hbox (11.07094pt too wide) detected at line 239
-[]
- []
-
-
-Overfull \hbox (47.16304pt too wide) detected at line 256
-[]
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -1504,32 +1494,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (76.3151pt too wide) detected at line 328
-[]
- []
-
 (./tables/table_1.tex)
-Overfull \hbox (25.30835pt too wide) in paragraph at lines 7--335
+Overfull \hbox (25.30835pt too wide) in paragraph at lines 7--347
  [] 
  []
 
-<figs/Figure_1.png, id=70, 462.528pt x 346.896pt>
+<figs/Figure_1.png, id=71, 462.528pt x 346.896pt>
 File: figs/Figure_1.png Graphic file (type png)
 <use figs/Figure_1.png>
-Package pdftex.def Info: figs/Figure_1.png  used on input line 342.
+Package pdftex.def Info: figs/Figure_1.png  used on input line 354.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-[2 <./figs/Figure_1.png>] (./11.11.3.9.aux)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2] [3
+
+ <./figs/Figure_1.png>] (./11.11.3.9.aux)
 Package rerunfilecheck Info: File `11.11.3.9.out' has not changed.
 (rerunfilecheck)             Checksum: 88172CAD2D937F83DD86B95AEE9FF7EC;161.
  ) 
 Here is how much of TeX's memory you used:
- 45012 strings out of 478287
- 1036378 string characters out of 5849290
+ 45019 strings out of 478287
+ 1036474 string characters out of 5849290
  1553371 words of memory out of 5000000
  62408 multiletter control sequences out of 15000+600000
  531425 words of font info for 154 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 91i,17n,93p,413b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 91i,17n,93p,413b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1538,10 +1529,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 11.11.3.9.pdf (2 pages, 77925 bytes).
+Output written on 11.11.3.9.pdf (3 pages, 78712 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
- 68 named destinations out of 1000 (max. 500000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 75 named destinations out of 1000 (max. 500000)
  34 words of extra memory for PDF output out of 10000 (max. 10000000)
 
