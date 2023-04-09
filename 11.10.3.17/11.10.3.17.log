@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.5)  9 APR 2023 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.5)  9 APR 2023 11:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1481,7 +1481,7 @@ LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
 File: utxsyc.fd 2000/12/15 v3.1
 )
 (./tables/table_1.tex)
-<figs/figure_1.png, id=7, 462.528pt x 346.896pt>
+<figs/figure_1.png, id=15, 462.528pt x 346.896pt>
 File: figs/figure_1.png Graphic file (type png)
 <use figs/figure_1.png>
 Package pdftex.def Info: figs/figure_1.png  used on input line 241.
@@ -1495,23 +1495,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
  <./figs/figure_1.png>]
 (./11.10.3.17.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `11.10.3.17.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `11.10.3.17.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  88172CAD2D937F83DD86B95AEE9FF7EC;161.
+Package rerunfilecheck Info: File `11.10.3.17.out' has not changed.
+(rerunfilecheck)             Checksum: 88172CAD2D937F83DD86B95AEE9FF7EC;161.
  ) 
 Here is how much of TeX's memory you used:
- 44954 strings out of 478287
- 1035714 string characters out of 5849290
- 1537000 words of memory out of 5000000
- 62398 multiletter control sequences out of 15000+600000
+ 44956 strings out of 478287
+ 1035723 string characters out of 5849290
+ 1536076 words of memory out of 5000000
+ 62401 multiletter control sequences out of 15000+600000
  528699 words of font info for 150 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  91i,15n,93p,414b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1522,10 +1513,10 @@ e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 11.10.3.17.pdf (1 page, 65365 bytes).
+Output written on 11.10.3.17.pdf (1 page, 65477 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 87 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 500000)
+ 34 words of extra memory for PDF output out of 10000 (max. 10000000)
 
