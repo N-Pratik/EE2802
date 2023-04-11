@@ -246,7 +246,8 @@ In triangle ABC with vertices $\vec{A} = \myvec{2\\3}$, $\vec{B} = \myvec{4\\-1}
 
 	\begin{align}
 		\mu &= \mu - \alpha \frac{\partial f(\mu)}{\partial \mu} \\
-		&= \mu - \alpha \brak{ 2\mu \norm{\vec{m}}^2 - 2 \brak{\vec{A}-\vec{B}}} 
+		&= \mu - \alpha \brak{ 2\mu \norm{\vec{m}}^2 - 2 \vec{m}^{\top}\brak{\vec{A}-\vec{B}}} \\ 
+		\mu &= \mu - \alpha \brak{18 \mu + 36} 
 	\end{align}
 
 Where $\alpha$ is the learning rate.
@@ -254,7 +255,6 @@ Where $\alpha$ is the learning rate.
 		The results obtained are using 0.01 as learning rate, iterated until the diffrence between cost in consecutive iterations is lesser than $5 \times 10^{-7}$.
 
 		The results obtained are:
-
 		\begin{align}
 			\mu_{min} & = -0.99986708\\
 			\text{min}\norm{\vec{A} - \vec{x}}^2 & = 2.000000318
