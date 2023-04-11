@@ -231,8 +231,28 @@ In triangle ABC with vertices $\vec{A} = \myvec{2\\3}$, $\vec{B} = \myvec{4\\-1}
 		\end{align}
 
 		\eqref{eq:1} is solved using Gradient Descent in \texttt{codes/11.10.3.17.py}. 
+
+	\item Update equation for gradient descent
+
+
+	Here, function to be minimized is
+	\begin{align}
+		g(\vec{x}) &= \norm{\vec{A} - \vec{x}}^2\\
+		i.e. \; f(\mu) &= \norm{\vec{A} - \vec{B} - \mu \vec{m}}^2\\
+		&= \norm{\myvec{-2 \\ 4} - \mu \myvec{3 \\ -3}}^2
+	\end{align}
+
+	The parameter $\mu$ is updated using the following equation,
+
+	\begin{align}
+		\mu &= \mu - \alpha \frac{\partial f(\mu)}{\partial \mu} \\
+		&= \mu - \alpha \brak{ 2\mu \norm{\vec{m}}^2 - 2 \brak{\vec{A}-\vec{B}}} 
+	\end{align}
+
+Where $\alpha$ is the learning rate.
+
 		The results obtained are using 0.01 as learning rate, iterated until the diffrence between cost in consecutive iterations is lesser than $5 \times 10^{-7}$.
-		\\
+
 		The results obtained are:
 
 		\begin{align}
