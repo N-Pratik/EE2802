@@ -204,32 +204,56 @@ In triangle ABC with vertices $\vec{A} = \myvec{2\\3}$, $\vec{B} = \myvec{4\\-1}
 		\myvec{3 & -3} \vec{x} &=  -3 \\
 		\myvec{1 & -1} \vec{x} &=  -1
 	\end{align}
-\item Normal vector of line BC
-	\begin{align}
-		\vec{n} &= \myvec{1 \\ 1} 
-	\end{align}
 
 \item Equation of line BC
 	\begin{align}
-		\vec{n}^{\top} \brak{ \vec{x} - \vec{B}} &= 0 \\
-		\myvec{1 & 1} \vec{x} &=  3 \\
+		\vec{x} &= \vec{B} + \mu \vec{m}  \\
 	\end{align}
-
- On comparing with $\vec{n}^{\top}\vec{x} = c$, 
-		\begin{align}
-			c &= 3 
-		\end{align}
-
 
 \item Length of altitude
+
+	Distance between vertex $\vec{A}$ and any point on line BC is given by
+
 	\begin{align}
-		length &= \frac{\abs{\vec{n}^{\top} \vec{A} - c}}{\norm{\vec{n}}} \\
-		&= \sqrt{2} 
+		d &= \norm{\vec{A} - \brak{\vec{B}+ \mu \vec{m}}} \\
 	\end{align}
+
+	The length of altitude can be finding the minma of $d$.
+
+	\begin{align}
+		f(\mu) &=\norm{\vec{A} - \brak{\vec{B}+ \mu \vec{m}}}^2  \\
+		&= \norm{\vec{A} - \vec{B}}^2 - 2 \mu \vec{m}^{\top} \brak{\vec{A} - \vec{B}} + \mu^2 \norm{\vec{m}}^2
+	\end{align}
+
+	for minima,
+
+	\begin{align}
+		\frac{\partial f}{\partial \mu} &= - 2 \vec{m}^{\top} \brak{\vec{A} - \vec{B}} + 2 \mu \norm{\vec{m}}^2 = 0 \\
+		\mu &= \frac{\vec{m}^{\top} \brak{\vec{A} - \vec{B}}}{\norm{\vec{m}}^2} \\
+		&= \frac{\myvec{3 & -3} \myvec{-2 \\ 4}}{18} \\
+		&= \frac{-18}{18} \\
+		&= -1
+	\end{align}
+
+	also for $\mu = -1$,
+	
+	\begin{align}
+		\frac{\partial^2 f}{\partial \mu^2} &= 2 \norm{\vec{m}}^2 > 0
+	\end{align}
+	
+	so $\mu = -1$ is the minima.
+
+
+	\begin{align}
+		d_{min} &= \norm{\vec{A} - \brak{\vec{B}+ \mu \vec{m}}} \\
+		&= \sqrt{2}
+	\end{align}
+
+Therefore, the length of alititude is $\sqrt{2}$
 
 \end{enumerate}
 
-\begin{table} 
+\begin{table}[h!] 
 \centering 
         \input{tables/table_1.tex}
         \caption{Table}
@@ -247,6 +271,4 @@ In triangle ABC with vertices $\vec{A} = \myvec{2\\3}$, $\vec{B} = \myvec{4\\-1}
 
 
 \end{document}
-
-
 

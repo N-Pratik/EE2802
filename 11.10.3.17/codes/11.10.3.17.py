@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import cvxpy as cp
 
 import sys
 sys.path.insert(0,'/home/pratik/CoordGeo')
@@ -16,21 +17,19 @@ n = np.array([[1,0],[0,-1]]) @ m
 # EQUATION of ALTITUDE
 
 c = m.T@A
-
-mu = (c - m.T@B)/ (m.T@m)
-
-D = B + mu*m
 print(f"altitude eq: {m.T}x = {c}")
 
-# Length of Alt
-c = n.T@B
+mu = cp.Variable()
 
-L = abs(n.T @A -c)/np.linalg.norm(n)
+prob = cp.Problem(cp.Minimize(cp.norm(A-B-mu*m)))
+prob.solve()
 
-print(f"Length of Altitude: {L}")
+print(f"Alt_Len={prob.value}")
 
+D = B + mu.value*m
 
-print(f"Point of intersection: {D}")
+print(f"POI:{D}")
+
 #PLOTTING
 
 l1 = line_gen(A,B)
@@ -52,5 +51,7 @@ plt.text(A[0]*(1+0.1),A[1]*(1),'A')
 plt.text(B[0]*(1),B[1]*(1-0.1),'B')
 plt.text(C[0]*(1),C[1]*(1-0.1),'C')
 
+
+plt.grid()
 plt.savefig('../figs/figure_1.png')
 plt.show()
