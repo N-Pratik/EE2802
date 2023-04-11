@@ -216,7 +216,7 @@ In triangle ABC with vertices $\vec{A} = \myvec{2\\3}$, $\vec{B} = \myvec{4\\-1}
 
 	The length of altitude can be expressed as a optimization problem,
 		\begin{align}
-			\text{min} \norm{\vec{A} - \vec{x}}^2
+			\text{min} \norm{\vec{A} - \vec{x}}^2  \label{eq:1}
 		\end{align}
 
 		such that 
@@ -230,11 +230,11 @@ In triangle ABC with vertices $\vec{A} = \myvec{2\\3}$, $\vec{B} = \myvec{4\\-1}
 			c &= 3
 		\end{align}
 
-		Above equation is solved using \texttt{cvxpy} in \texttt{codes/11.10.3.17.py}. The results obtained are:
+		\eqref{eq:1} is solved using \texttt{cvxpy} in \texttt{codes/11.10.3.17.py}. The results obtained are:
 
 		\begin{align}
 			\mu_{min} & = -1\\
-			min\norm{\vec{A} - \vec{x}}^2 & = 2
+			\text{min}\norm{\vec{A} - \vec{x}}^2 & = 2
 		\end{align}
 
 Therefore, the length of altitude is given by,
