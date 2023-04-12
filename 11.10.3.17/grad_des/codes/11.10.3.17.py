@@ -20,28 +20,26 @@ c = m.T@A
 print(f"altitude eq: {m.T}x = {c}")
 
 
-mu = 0
+x = B.astype(np.float64)
 learn_rate = 0.01
 #tolerance = 1.5
 
-def cost(mu):
-    Error = np.linalg.norm(A-B-mu*m)**2 
+def cost(x):
+    Error = np.linalg.norm(A-x)**2 
     return Error
 
 prev_cost = 0
 itr = 0
-while (abs(cost(mu)-prev_cost) > 5e-7) and (itr<50):
+while (abs(cost(x)-prev_cost) > 5e-7) and (itr<50):
     itr += 1
-    prev_cost = cost(mu)
-    mu -= learn_rate*(2*mu*(m.T@m) - 2*m.T@(A-B))
+    prev_cost = cost(x)
+    x += learn_rate*(2*((A-x).T@m))*m
 
-
-D = B + mu*m
-
-print(f"POI:{D}")
-print(f"cost:{cost(mu)}")
+D = x
+print(f"POI:{x}")
+print(f"cost:{cost(x)}")
 print(f"itr:{itr}")
-print(f"mu:{mu}")
+#print(f"mu:{mu}")
 
 #PLOTTING
 
