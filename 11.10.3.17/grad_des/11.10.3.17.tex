@@ -248,13 +248,13 @@ In triangle ABC with vertices $\vec{A} = \myvec{2\\3}$, $\vec{B} = \myvec{4\\-1}
 	But due to the constraint, only the component orthogonal to $\vec{n}$ is considered. Hence, the gradient is updated as
 
 	\begin{align}
-		\text{grad} &= -2 \frac{\vec{m}^{\top}\brak{\vec{x} - \vec{A}}}{\norm{\vec{m}}} \vec{m} \\
+		\text{grad} &= -2 \brak{ \brak{\vec{x} -\vec{A}} - \frac{\vec{n}^{\top}\brak{\vec{x} - \vec{A}}}{\norm{\vec{n}}} \vec{n}} 
 	\end{align}
 
 	The parameter $\vec{x}$ is updated using the following equation,
 
 	\begin{align}
-		\mu &= \mu - \alpha \times \text{grad} \\ 
+		\mu &= \mu - \alpha \times \text{grad}
 	\end{align}
 
 Where $\alpha$ is the learning rate.
