@@ -221,13 +221,19 @@ In triangle ABC with vertices $\vec{A} = \myvec{2\\3}$, $\vec{B} = \myvec{4\\-1}
 
 		such that 
 		\begin{align}
-			\vec{n}^{\top} \vec{x} &=  c
+			\vec{n}^{\top}\vec{x} = c
 		\end{align}
 
 		where,
 		\begin{align}
-			\vec{n} &= \myvec{1\\1} \\
+			\vec{n} &=\myvec{1 & 1} \\
 			c &= 3
+		\end{align}
+
+		This constraint can also be expressed as,
+
+		\begin{align}
+			\vec{x} &= \vec{B} + \mu \vec{m} 
 		\end{align}
 
 		\eqref{eq:1} is solved using Gradient Descent in \texttt{codes/11.10.3.17.py}. 
